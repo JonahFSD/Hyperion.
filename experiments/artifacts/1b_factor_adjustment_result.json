@@ -1,0 +1,70 @@
+{
+  "test": "1B_factor_adjustment",
+  "ff5_data": {
+    "n_months": 751,
+    "date_range": "196307-202601"
+  },
+  "regression_stats": {
+    "n_companies_regressed": 1531,
+    "n_companies_skipped": 71,
+    "median_obs_per_company": 240,
+    "median_r_squared": 0.03013478423406213,
+    "r_squared_percentiles": {
+      "p10": 0.00907906403022296,
+      "p25": 0.016413587120738093,
+      "p50": 0.03013478423406213,
+      "p75": 0.05510533814792795,
+      "p90": 0.10784405402038155
+    },
+    "n_company_years_with_residuals": 27817
+  },
+  "t04_comparison": {
+    "K_1": {
+      "raw_lift": 0.05531367218376055,
+      "residual_lift": 0.052966233963196975,
+      "survival_ratio": 0.9575613383113487,
+      "residual_ci_95": [
+        0.048735409247623096,
+        0.05698882007419813
+      ]
+    },
+    "K_3": {
+      "raw_lift": 0.03867649521017071,
+      "residual_lift": 0.037941955406045766,
+      "survival_ratio": 0.9810081084096838,
+      "residual_ci_95": [
+        0.03585019672331051,
+        0.040310925535848675
+      ]
+    },
+    "K_5": {
+      "raw_lift": 0.030416897001786663,
+      "residual_lift": 0.029944809185810807,
+      "survival_ratio": 0.9844794222123274,
+      "residual_ci_95": [
+        0.02811921853101853,
+        0.03162485460767923
+      ]
+    },
+    "K_10": {
+      "raw_lift": 0.024015597738141575,
+      "residual_lift": 0.023805918379345287,
+      "survival_ratio": 0.9912690343549819,
+      "residual_ci_95": [
+        0.022469893082263128,
+        0.02519993350937718
+      ]
+    }
+  },
+  "t05_comparison": {
+    "raw_diff": 0.0976745768432356,
+    "residual_diff": 0.12660359913510222,
+    "survival_ratio": 1.296177605543116,
+    "residual_ci_95": [
+      0.12028827965867946,
+      0.13289630460995017
+    ]
+  },
+  "verdict": "PASS",
+  "interpretation": "Factor-adjusted signal SURVIVES. K=5 residual lift = 0.029945 (CI [0.028119, 0.031625] excludes zero), survival ratio = 98.4% (>30%). SAE captures company-specific signal beyond FF5 factor exposure."
+}

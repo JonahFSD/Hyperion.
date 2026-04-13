@@ -1,0 +1,158 @@
+{
+  "config": {
+    "n_bootstrap": 10000,
+    "n_tickers": 1602,
+    "seed": 42,
+    "ci_level": 0.95,
+    "population_baseline": 0.160865
+  },
+  "methods": {
+    "sae": {
+      "mc": 0.358981,
+      "ci_lower": 0.327674,
+      "ci_upper": 0.415299,
+      "z0": 0.63443,
+      "a": -0.00683,
+      "bootstrap_mean": 0.344215,
+      "bootstrap_std": 0.023059
+    },
+    "sic": {
+      "mc": 0.231085,
+      "ci_lower": 0.217848,
+      "ci_upper": 0.24587,
+      "z0": 0.111525,
+      "a": 0.005118,
+      "bootstrap_mean": 0.230303,
+      "bootstrap_std": 0.007135
+    },
+    "sbert": {
+      "mc": 0.219345,
+      "ci_lower": 0.210544,
+      "ci_upper": 0.228068,
+      "z0": 0.002256,
+      "a": -0.006054,
+      "bootstrap_mean": 0.219349,
+      "bootstrap_std": 0.004479
+    }
+  },
+  "deltas": {
+    "sae_minus_sic": {
+      "delta": 0.127896,
+      "ci_lower": 0.096341,
+      "ci_upper": 0.185529,
+      "z0": 0.60136,
+      "a": -0.006493,
+      "p_value": 0.0,
+      "t_stat": 5.568539
+    },
+    "sae_minus_sbert": {
+      "delta": 0.139636,
+      "ci_lower": 0.10948,
+      "ci_upper": 0.194032,
+      "z0": 0.647049,
+      "a": -0.006905,
+      "p_value": 0.0,
+      "t_stat": 6.242797
+    },
+    "sae_minus_baseline": {
+      "delta": 0.198116,
+      "ci_lower": 0.166809,
+      "ci_upper": 0.254434,
+      "z0": 0.63443,
+      "a": -0.00683,
+      "p_value": 0.0,
+      "t_stat": 8.591642
+    }
+  },
+  "influence": {
+    "n_tickers_that_flip_conclusion": 0,
+    "flipping_tickers": [],
+    "influence_mean": 1.7e-05,
+    "influence_std": 0.000815,
+    "influence_max_abs": 0.009832,
+    "influence_max_ticker": "CMS-PB",
+    "influence_skewness": -1.640264,
+    "top_20_by_abs_influence": [
+      {
+        "ticker": "CMS-PB",
+        "influence": -0.009832
+      },
+      {
+        "ticker": "CMS",
+        "influence": -0.009816
+      },
+      {
+        "ticker": "AMAT",
+        "influence": 0.008024
+      },
+      {
+        "ticker": "SSY",
+        "influence": -0.008009
+      },
+      {
+        "ticker": "KO",
+        "influence": -0.006713
+      },
+      {
+        "ticker": "COKE",
+        "influence": -0.006707
+      },
+      {
+        "ticker": "IDA",
+        "influence": 0.006274
+      },
+      {
+        "ticker": "AVA",
+        "influence": 0.00562
+      },
+      {
+        "ticker": "PTSI",
+        "influence": -0.005592
+      },
+      {
+        "ticker": "LRCX",
+        "influence": 0.005002
+      },
+      {
+        "ticker": "VZ",
+        "influence": 0.004883
+      },
+      {
+        "ticker": "T",
+        "influence": 0.004883
+      },
+      {
+        "ticker": "WDC",
+        "influence": 0.004558
+      },
+      {
+        "ticker": "STX",
+        "influence": 0.004555
+      },
+      {
+        "ticker": "HIG",
+        "influence": 0.004157
+      },
+      {
+        "ticker": "ERIE",
+        "influence": -0.004055
+      },
+      {
+        "ticker": "UHS",
+        "influence": -0.004051
+      },
+      {
+        "ticker": "LNC",
+        "influence": 0.003956
+      },
+      {
+        "ticker": "ADC",
+        "influence": 0.003588
+      },
+      {
+        "ticker": "NNN",
+        "influence": 0.003562
+      }
+    ]
+  }
+}

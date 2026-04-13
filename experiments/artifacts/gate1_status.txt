@@ -1,0 +1,14 @@
+Gate 1 Status — Thu Mar 26 11:28:32 CDT 2026
+─────────────────────────
+T01 year_demeaned:        PENDING
+T02 top1pct_sic:          PENDING
+T03 nn_precision:         PENDING
+T04 within_sic_precision: PENDING
+T05 topology_vs_magnitude:PENDING
+────────────────────────
+VERDICT:                  WAITING
+T01 DONE
+T02 DONE
+T05 DONE
+T03 DONE
+T04 DONE

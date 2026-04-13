@@ -1,0 +1,59 @@
+{
+  "hard_tests": {
+    "mc_replication": {
+      "passed": true,
+      "sae_mc": 0.358981,
+      "sae_published": 0.359,
+      "sic_mc": 0.231085,
+      "sic_published": 0.231
+    },
+    "sae_gt_sic": {
+      "passed": true,
+      "p_raw": 0.0,
+      "p_by": 0.000183,
+      "t_stat": 5.568539
+    },
+    "sae_gt_sbert": {
+      "passed": true,
+      "p_raw": 0.0,
+      "p_by": 0.000183,
+      "t_stat": 6.242797
+    },
+    "sae_gt_baseline": {
+      "passed": true,
+      "p_raw": 0.0,
+      "p_by": 0.000183
+    }
+  },
+  "diagnostics": {
+    "median_vs_mean": {
+      "sae_ratio": 0.9941,
+      "sic_ratio": 0.991678,
+      "sbert_ratio": 1.095767
+    },
+    "temporal_slope_sic": {
+      "slope": 0.006446,
+      "ci_lower": 0.00301,
+      "ci_upper": 0.010302,
+      "includes_zero": false
+    },
+    "temporal_slope_sbert": {
+      "slope": 0.007489,
+      "ci_lower": 0.004375,
+      "ci_upper": 0.010887,
+      "includes_zero": false
+    },
+    "theta_ratio": 0.97526,
+    "rolling_win_rate_sic": "21/21",
+    "rolling_win_rate_sbert": "21/21",
+    "n_flipping_tickers": 0,
+    "z0_sae": 0.63443
+  },
+  "flags": [
+    "SAE-SIC advantage is increasing over time (slope=0.006446, CI excludes zero). Investigate in 1B.",
+    "SAE-SBERT advantage is increasing over time (slope=0.007489, CI excludes zero). Investigate in 1B.",
+    "SAE bootstrap bias correction z0 = 0.6344 (|z0| > 0.25 suggests notable bias in bootstrap distribution)"
+  ],
+  "overall": "CONDITIONAL",
+  "rationale": "All 4 hard tests pass, but 3 diagnostic concern(s) raised. Review flags before proceeding to 1B."
+}

@@ -1,0 +1,22 @@
+{
+  "tests": {
+    "T01": "PASS",
+    "T02": "FAIL",
+    "T03": "PASS",
+    "T04": "PASS",
+    "T05": "PASS"
+  },
+  "critical_path_verdict": "PIVOT_TO_RERANKER",
+  "architectural_implication": "SIC candidate generation \u2192 SAE re-ranking \u2192 LLM synthesis",
+  "summary": "T01 (PASS): Year-demeaning increases signal from rho=0.003 to 0.022, confirming the raw global correlation was suppressed by market-regime noise \u2014 the underlying company-specific signal is real. T02 (FAIL): Top-1% SAE pairs are only 1.24x enriched for same-SIC vs baseline, meaning SAE's highest-similarity pairs are mostly cross-industry \u2014 the inversion is not a SIC-composition artifact but reflects genuine cross-industry noise. T03 (PASS, qualified): SAE nearest-neighbor retrieval beats random (60% hit rate at K=10, lift CI excludes zero), but SAE top-10 mean correlation (0.222) underperforms the SIC baseline (0.244) \u2014 SAE has global retrieval signal but is not the best global retriever. T04 (PASS): Within-SIC, SAE re-ranking produces +0.055 lift at K=1 over random same-industry peers, with CI excluding zero across all K values and all 25 years \u2014 this is the strongest and most consistent result. T05 (PASS): Graph topology adds +0.098 correlation above magnitude-matched controls, confirming that which companies are nearest neighbors matters beyond raw cosine magnitude. Combined verdict: SAE features carry real retrieval signal, but their comparative advantage is within-industry discrimination, not global similarity. The product architecture should use SIC codes for candidate generation and SAE cosine for re-ranking within industry, not as a standalone retrieval engine.",
+  "next_steps": [
+    "Run 1B factor adjustment to check if T04 within-SIC signal is factor-driven",
+    "Run 1C permutation test for Layer 1 completeness",
+    "Design multi-signal retrieval pipeline (Layer 3): SIC \u2192 SAE re-rank \u2192 LLM synthesis"
+  ],
+  "key_numbers": {
+    "t04_lift_k1": 0.05531367218376055,
+    "t03_sae_vs_sic": "0.222 vs 0.244",
+    "t05_topology_value": "0.0977"
+  }
+}

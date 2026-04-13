@@ -1,0 +1,34 @@
+{
+  "population_baseline_mc": 0.160865,
+  "population_baseline_median": 0.172718,
+  "methods": {
+    "sae_cd": {
+      "mean_mc": 0.358981,
+      "median_mc": 0.356863
+    },
+    "bert": {
+      "mean_mc": 0.197681,
+      "median_mc": 0.2162
+    },
+    "sbert": {
+      "mean_mc": 0.219345,
+      "median_mc": 0.240351
+    },
+    "palm": {
+      "mean_mc": 0.219494,
+      "median_mc": 0.240136
+    },
+    "rolling_cd": {
+      "mean_mc": 0.384834,
+      "median_mc": 0.383754
+    },
+    "sic": {
+      "mean_mc": 0.231085,
+      "median_mc": 0.229162
+    },
+    "industry": {
+      "mean_mc": 0.186837,
+      "median_mc": 0.202775
+    }
+  }
+}

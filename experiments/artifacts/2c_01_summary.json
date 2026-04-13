@@ -1,0 +1,321 @@
+{
+  "tests": {
+    "event_disappear": {
+      "n_events": 206,
+      "n_total": 26144,
+      "event_rate_pct": 0.7879436964504284,
+      "auc_train": 0.7638885204013951,
+      "auc_test": 0.5862293673242865,
+      "auc_simple_test": 0.4424069366369485,
+      "average_precision_test": 0.020534998822781876,
+      "change_magnitude_coef": -0.14884019807304297,
+      "coef_direction": "negative",
+      "random_baseline_auc_mean": 0.5001128038955924,
+      "random_baseline_auc_p95": 0.5466366948333273,
+      "beats_random_p95": true,
+      "n_train": 13317,
+      "n_test": 12827,
+      "n_train_events": 74,
+      "n_test_events": 132,
+      "feature_cols": [
+        "change_magnitude",
+        "sic_60",
+        "sic_28",
+        "sic_73",
+        "sic_36",
+        "sic_38",
+        "sic_35",
+        "sic_67",
+        "sic_37",
+        "sic_49",
+        "sic_20",
+        "sic_63",
+        "sic_50",
+        "sic_13",
+        "sic_62",
+        "sic_33",
+        "sic_51",
+        "sic_34",
+        "sic_58",
+        "sic_56",
+        "sic_80",
+        "prior_cum_return"
+      ]
+    },
+    "event_extreme_return": {
+      "n_events": 941,
+      "n_total": 26144,
+      "event_rate_pct": 3.599296205630355,
+      "auc_train": 0.7121132222795808,
+      "auc_test": 0.7111213365940017,
+      "auc_simple_test": 0.559771424787109,
+      "average_precision_test": 0.19686319335473915,
+      "change_magnitude_coef": 0.011804375442001672,
+      "coef_direction": "positive",
+      "random_baseline_auc_mean": 0.5008761713315328,
+      "random_baseline_auc_p95": 0.5197589644147811,
+      "beats_random_p95": true,
+      "n_train": 13317,
+      "n_test": 12827,
+      "n_train_events": 333,
+      "n_test_events": 608,
+      "feature_cols": [
+        "change_magnitude",
+        "sic_60",
+        "sic_28",
+        "sic_73",
+        "sic_36",
+        "sic_38",
+        "sic_35",
+        "sic_67",
+        "sic_37",
+        "sic_49",
+        "sic_20",
+        "sic_63",
+        "sic_50",
+        "sic_13",
+        "sic_62",
+        "sic_33",
+        "sic_51",
+        "sic_34",
+        "sic_58",
+        "sic_56",
+        "sic_80",
+        "prior_cum_return"
+      ]
+    },
+    "event_distress": {
+      "n_events": 1642,
+      "n_total": 26144,
+      "event_rate_pct": 6.280599755201958,
+      "auc_train": 0.6795474762022118,
+      "auc_test": 0.702931238358827,
+      "auc_simple_test": 0.6138342081228547,
+      "average_precision_test": 0.17606076786904626,
+      "change_magnitude_coef": 0.07869652704579706,
+      "coef_direction": "positive",
+      "random_baseline_auc_mean": 0.5001863378731982,
+      "random_baseline_auc_p95": 0.519306432656617,
+      "beats_random_p95": true,
+      "n_train": 13317,
+      "n_test": 12827,
+      "n_train_events": 832,
+      "n_test_events": 810,
+      "feature_cols": [
+        "change_magnitude",
+        "sic_60",
+        "sic_28",
+        "sic_73",
+        "sic_36",
+        "sic_38",
+        "sic_35",
+        "sic_67",
+        "sic_37",
+        "sic_49",
+        "sic_20",
+        "sic_63",
+        "sic_50",
+        "sic_13",
+        "sic_62",
+        "sic_33",
+        "sic_51",
+        "sic_34",
+        "sic_58",
+        "sic_56",
+        "sic_80",
+        "prior_cum_return"
+      ]
+    }
+  },
+  "quartile_analysis": {
+    "event_disappear": {
+      "quartiles": {
+        "Q1_low": {
+          "event_rate": 0.007037943696450428,
+          "n_events": 46,
+          "n_total": 6536,
+          "event_rate_pct": 0.7037943696450428
+        },
+        "Q2": {
+          "event_rate": 0.00872093023255814,
+          "n_events": 57,
+          "n_total": 6536,
+          "event_rate_pct": 0.872093023255814
+        },
+        "Q3": {
+          "event_rate": 0.0068849449204406365,
+          "n_events": 45,
+          "n_total": 6536,
+          "event_rate_pct": 0.6884944920440637
+        },
+        "Q4_high": {
+          "event_rate": 0.008873929008567932,
+          "n_events": 58,
+          "n_total": 6536,
+          "event_rate_pct": 0.8873929008567932
+        }
+      },
+      "q4_q1_ratio": 1.2608695652173914,
+      "monotonic": false
+    },
+    "event_extreme_return": {
+      "quartiles": {
+        "Q1_low": {
+          "event_rate": 0.0359547123623011,
+          "n_events": 235,
+          "n_total": 6536,
+          "event_rate_pct": 3.59547123623011
+        },
+        "Q2": {
+          "event_rate": 0.02386780905752754,
+          "n_events": 156,
+          "n_total": 6536,
+          "event_rate_pct": 2.386780905752754
+        },
+        "Q3": {
+          "event_rate": 0.0341187270501836,
+          "n_events": 223,
+          "n_total": 6536,
+          "event_rate_pct": 3.4118727050183604
+        },
+        "Q4_high": {
+          "event_rate": 0.05003059975520196,
+          "n_events": 327,
+          "n_total": 6536,
+          "event_rate_pct": 5.003059975520196
+        }
+      },
+      "q4_q1_ratio": 1.3914893617021278,
+      "monotonic": false
+    },
+    "event_distress": {
+      "quartiles": {
+        "Q1_low": {
+          "event_rate": 0.04054467564259486,
+          "n_events": 265,
+          "n_total": 6536,
+          "event_rate_pct": 4.054467564259486
+        },
+        "Q2": {
+          "event_rate": 0.05018359853121175,
+          "n_events": 328,
+          "n_total": 6536,
+          "event_rate_pct": 5.018359853121175
+        },
+        "Q3": {
+          "event_rate": 0.0644124847001224,
+          "n_events": 421,
+          "n_total": 6536,
+          "event_rate_pct": 6.44124847001224
+        },
+        "Q4_high": {
+          "event_rate": 0.09608323133414932,
+          "n_events": 628,
+          "n_total": 6536,
+          "event_rate_pct": 9.608323133414933
+        }
+      },
+      "q4_q1_ratio": 2.369811320754717,
+      "monotonic": true
+    }
+  },
+  "verdict": "GO",
+  "go_no_go": null,
+  "verdict_explanation": "AUC=0.7111 on event_extreme_return exceeds 0.60 threshold. SAE structural changes predict corporate events. Proceed to Tier 2 validation with real event data.",
+  "best_auc": 0.7111213365940017,
+  "best_event_type": "event_extreme_return",
+  "feature_attribution": {
+    "n_event_companies_with_features": 941,
+    "n_control_companies_with_features": 4705,
+    "top_20_pca_components": [
+      0,
+      18,
+      3,
+      14,
+      5,
+      9,
+      4,
+      30,
+      26,
+      21,
+      6,
+      19,
+      41,
+      10,
+      13,
+      15,
+      31,
+      36,
+      7,
+      11
+    ],
+    "top_20_event_mean": [
+      3859.1224133578053,
+      686.9995731126468,
+      1924.2080163323837,
+      901.0127351166758,
+      917.1603485446744,
+      755.0270954892976,
+      734.6290947370051,
+      453.73321163412476,
+      447.137215441727,
+      478.4607628699067,
+      804.0464552681002,
+      421.36232017543534,
+      428.718680934376,
+      560.0258353169419,
+      611.4577776753165,
+      477.00295371302053,
+      383.7627097808326,
+      375.2559083660695,
+      1028.5732383925672,
+      768.9587960632913
+    ],
+    "top_20_control_mean": [
+      3429.0261236007377,
+      396.1438831061461,
+      1653.047942777783,
+      634.2487939720104,
+      690.160231915723,
+      547.9661751749244,
+      555.7776851745106,
+      293.47593375799744,
+      299.1529838856591,
+      336.4359276559659,
+      665.9615632819867,
+      286.43241015496835,
+      299.6902407180059,
+      432.326204920088,
+      485.19036416201857,
+      352.9815388464862,
+      261.13981838120003,
+      252.6536724075541,
+      906.1966510101676,
+      658.1227193600778
+    ],
+    "top_20_diff": [
+      430.09628975706755,
+      290.85569000650065,
+      271.1600735546008,
+      266.7639411446654,
+      227.00011662895145,
+      207.06092031437322,
+      178.8514095624945,
+      160.25727787612732,
+      147.98423155606787,
+      142.02483521394083,
+      138.08489198611346,
+      134.929910020467,
+      129.0284402163701,
+      127.69963039685388,
+      126.26741351329792,
+      124.02141486653431,
+      122.62289139963258,
+      122.6022359585154,
+      122.37658738239963,
+      110.83607670321351
+    ],
+    "overall_event_mean_change": 181.71373440632019,
+    "overall_control_mean_change": 146.183210816545
+  }
+}

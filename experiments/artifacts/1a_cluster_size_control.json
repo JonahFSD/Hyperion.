@@ -1,0 +1,1152 @@
+{
+  "overall": {
+    "sae_cd": {
+      "equal_mc": 0.3589813949702684,
+      "pair_weighted_mc": 0.15094987358594228
+    },
+    "sic": {
+      "equal_mc": 0.2310853199865526,
+      "pair_weighted_mc": 0.2519508113484125
+    },
+    "sbert": {
+      "equal_mc": 0.219345102260977,
+      "pair_weighted_mc": 0.21019351437300604
+    }
+  },
+  "trend_results": {
+    "sae_minus_sic": {
+      "equal_slope": 0.0064455377292527306,
+      "equal_ci": [
+        0.00300950847677877,
+        0.010302513640301875
+      ],
+      "equal_ci_excludes_zero": true,
+      "pair_weighted_slope": -0.0013267072394225372,
+      "pair_weighted_ci": [
+        -0.00284846266749091,
+        4.938821477794183e-05
+      ],
+      "pw_ci_excludes_zero": false
+    },
+    "sae_minus_sbert": {
+      "equal_slope": 0.007489390891000479,
+      "equal_ci": [
+        0.004374573124497006,
+        0.01088698716731479
+      ],
+      "equal_ci_excludes_zero": true,
+      "pair_weighted_slope": 0.0003477406956672833,
+      "pair_weighted_ci": [
+        -0.0004239210006718109,
+        0.0011004895797712597
+      ],
+      "pw_ci_excludes_zero": false
+    }
+  },
+  "size_stratified_aggregate": {
+    "sae_cd": {
+      "2": {
+        "mean_mc": 0.37883464602271255,
+        "n_year_bins": 25,
+        "total_pairs": 397,
+        "total_clusters": 397
+      },
+      "3-5": {
+        "mean_mc": 0.3810327386499721,
+        "n_year_bins": 25,
+        "total_pairs": 574,
+        "total_clusters": 101
+      },
+      "6-15": {
+        "mean_mc": 0.22908464934997566,
+        "n_year_bins": 12,
+        "total_pairs": 560,
+        "total_clusters": 21
+      },
+      "16-50": {
+        "mean_mc": 0.09789533561009627,
+        "n_year_bins": 1,
+        "total_pairs": 820,
+        "total_clusters": 1
+      },
+      "51+": {
+        "mean_mc": 0.20604808644736483,
+        "n_year_bins": 25,
+        "total_pairs": 724136,
+        "total_clusters": 39
+      }
+    },
+    "sic": {
+      "2": {
+        "mean_mc": 0.23954449503492004,
+        "n_year_bins": 25,
+        "total_pairs": 1775,
+        "total_clusters": 1775
+      },
+      "3-5": {
+        "mean_mc": 0.2235795813726943,
+        "n_year_bins": 25,
+        "total_pairs": 10236,
+        "total_clusters": 2036
+      },
+      "6-15": {
+        "mean_mc": 0.23932583638895186,
+        "n_year_bins": 25,
+        "total_pairs": 24710,
+        "total_clusters": 733
+      },
+      "16-50": {
+        "mean_mc": 0.23286803467178413,
+        "n_year_bins": 25,
+        "total_pairs": 98028,
+        "total_clusters": 213
+      },
+      "51+": {
+        "mean_mc": 0.30113141022224155,
+        "n_year_bins": 9,
+        "total_pairs": 22598,
+        "total_clusters": 16
+      }
+    },
+    "sbert": {
+      "6-15": {
+        "mean_mc": 0.2397212274573918,
+        "n_year_bins": 25,
+        "total_pairs": 27340,
+        "total_clusters": 478
+      },
+      "16-50": {
+        "mean_mc": 0.20489969615335654,
+        "n_year_bins": 25,
+        "total_pairs": 256893,
+        "total_clusters": 696
+      },
+      "51+": {
+        "mean_mc": 0.23327499992959577,
+        "n_year_bins": 15,
+        "total_pairs": 105679,
+        "total_clusters": 51
+      }
+    }
+  },
+  "yearly_detail": {
+    "sae_cd": {
+      "1996": {
+        "equal_mc": 0.15683000925587998,
+        "pair_weighted_mc": 0.10586550261324643,
+        "n_clusters_with_pairs": 69,
+        "total_pairs": 45523,
+        "avg_cluster_size": 6.3768115942028984,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.9565217391304348,
+          "pct_size_3_5": 0.028985507246376812,
+          "pct_size_6_plus": 0.014492753623188406
+        }
+      },
+      "1997": {
+        "equal_mc": 0.2332606892232257,
+        "pair_weighted_mc": 0.12917109916862507,
+        "n_clusters_with_pairs": 12,
+        "total_pairs": 44293,
+        "avg_cluster_size": 27.5,
+        "median_cluster_size": 2.5,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.5,
+          "pct_size_3_5": 0.3333333333333333,
+          "pct_size_6_plus": 0.16666666666666666
+        }
+      },
+      "1998": {
+        "equal_mc": 0.37050192543774824,
+        "pair_weighted_mc": 0.24396713543408538,
+        "n_clusters_with_pairs": 17,
+        "total_pairs": 39095,
+        "avg_cluster_size": 18.705882352941178,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.8235294117647058,
+          "pct_size_3_5": 0.058823529411764705,
+          "pct_size_6_plus": 0.11764705882352941
+        }
+      },
+      "1999": {
+        "equal_mc": 0.17934490866265887,
+        "pair_weighted_mc": 0.10195002354896503,
+        "n_clusters_with_pairs": 11,
+        "total_pairs": 35546,
+        "avg_cluster_size": 26.818181818181817,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.6363636363636364,
+          "pct_size_3_5": 0.18181818181818182,
+          "pct_size_6_plus": 0.18181818181818182
+        }
+      },
+      "2000": {
+        "equal_mc": 0.30152821365516913,
+        "pair_weighted_mc": 0.05075032673695537,
+        "n_clusters_with_pairs": 16,
+        "total_pairs": 34238,
+        "avg_cluster_size": 18.875,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.6875,
+          "pct_size_3_5": 0.125,
+          "pct_size_6_plus": 0.1875
+        }
+      },
+      "2001": {
+        "equal_mc": 0.3455014828494027,
+        "pair_weighted_mc": 0.15827715970039044,
+        "n_clusters_with_pairs": 17,
+        "total_pairs": 27829,
+        "avg_cluster_size": 16.764705882352942,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.7647058823529411,
+          "pct_size_3_5": 0.058823529411764705,
+          "pct_size_6_plus": 0.17647058823529413
+        }
+      },
+      "2002": {
+        "equal_mc": 0.35989222445232677,
+        "pair_weighted_mc": 0.1870723246459515,
+        "n_clusters_with_pairs": 14,
+        "total_pairs": 20612,
+        "avg_cluster_size": 17.642857142857142,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.6428571428571429,
+          "pct_size_3_5": 0.21428571428571427,
+          "pct_size_6_plus": 0.14285714285714285
+        }
+      },
+      "2003": {
+        "equal_mc": 0.3886003039641138,
+        "pair_weighted_mc": 0.1535880384245036,
+        "n_clusters_with_pairs": 19,
+        "total_pairs": 16392,
+        "avg_cluster_size": 12.473684210526315,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.631578947368421,
+          "pct_size_3_5": 0.15789473684210525,
+          "pct_size_6_plus": 0.21052631578947367
+        }
+      },
+      "2004": {
+        "equal_mc": 0.38646949488430676,
+        "pair_weighted_mc": 0.13261843767400186,
+        "n_clusters_with_pairs": 21,
+        "total_pairs": 14155,
+        "avg_cluster_size": 11.047619047619047,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.6666666666666666,
+          "pct_size_3_5": 0.14285714285714285,
+          "pct_size_6_plus": 0.19047619047619047
+        }
+      },
+      "2005": {
+        "equal_mc": 0.371321724973653,
+        "pair_weighted_mc": 0.14057602461807014,
+        "n_clusters_with_pairs": 21,
+        "total_pairs": 16914,
+        "avg_cluster_size": 11.380952380952381,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.7619047619047619,
+          "pct_size_3_5": 0.09523809523809523,
+          "pct_size_6_plus": 0.14285714285714285
+        }
+      },
+      "2006": {
+        "equal_mc": 0.2194573890873274,
+        "pair_weighted_mc": 0.09664688587144075,
+        "n_clusters_with_pairs": 19,
+        "total_pairs": 12678,
+        "avg_cluster_size": 12.894736842105264,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.631578947368421,
+          "pct_size_3_5": 0.15789473684210525,
+          "pct_size_6_plus": 0.21052631578947367
+        }
+      },
+      "2007": {
+        "equal_mc": 0.30789283995462735,
+        "pair_weighted_mc": 0.15717200145195712,
+        "n_clusters_with_pairs": 14,
+        "total_pairs": 14246,
+        "avg_cluster_size": 17.642857142857142,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.5714285714285714,
+          "pct_size_3_5": 0.2857142857142857,
+          "pct_size_6_plus": 0.14285714285714285
+        }
+      },
+      "2008": {
+        "equal_mc": 0.3195125268840515,
+        "pair_weighted_mc": 0.25365840379734284,
+        "n_clusters_with_pairs": 22,
+        "total_pairs": 23819,
+        "avg_cluster_size": 14.909090909090908,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.6363636363636364,
+          "pct_size_3_5": 0.22727272727272727,
+          "pct_size_6_plus": 0.13636363636363635
+        }
+      },
+      "2009": {
+        "equal_mc": 0.4232000977055821,
+        "pair_weighted_mc": 0.1551862941230393,
+        "n_clusters_with_pairs": 23,
+        "total_pairs": 26783,
+        "avg_cluster_size": 14.391304347826088,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.7391304347826086,
+          "pct_size_3_5": 0.17391304347826086,
+          "pct_size_6_plus": 0.08695652173913043
+        }
+      },
+      "2010": {
+        "equal_mc": 0.41081205040558705,
+        "pair_weighted_mc": 0.17851115400981762,
+        "n_clusters_with_pairs": 22,
+        "total_pairs": 27547,
+        "avg_cluster_size": 15.454545454545455,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.6363636363636364,
+          "pct_size_3_5": 0.2727272727272727,
+          "pct_size_6_plus": 0.09090909090909091
+        }
+      },
+      "2011": {
+        "equal_mc": 0.36642313443334135,
+        "pair_weighted_mc": 0.19497660330202943,
+        "n_clusters_with_pairs": 23,
+        "total_pairs": 29001,
+        "avg_cluster_size": 15.478260869565217,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.6956521739130435,
+          "pct_size_3_5": 0.21739130434782608,
+          "pct_size_6_plus": 0.08695652173913043
+        }
+      },
+      "2012": {
+        "equal_mc": 0.4003874977579588,
+        "pair_weighted_mc": 0.11648035889314236,
+        "n_clusters_with_pairs": 21,
+        "total_pairs": 27129,
+        "avg_cluster_size": 16.333333333333332,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.7142857142857143,
+          "pct_size_3_5": 0.19047619047619047,
+          "pct_size_6_plus": 0.09523809523809523
+        }
+      },
+      "2013": {
+        "equal_mc": 0.4869684094587277,
+        "pair_weighted_mc": 0.10944165525665941,
+        "n_clusters_with_pairs": 21,
+        "total_pairs": 31089,
+        "avg_cluster_size": 17.285714285714285,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.6666666666666666,
+          "pct_size_3_5": 0.23809523809523808,
+          "pct_size_6_plus": 0.09523809523809523
+        }
+      },
+      "2014": {
+        "equal_mc": 0.4192784385780231,
+        "pair_weighted_mc": 0.12432734091897439,
+        "n_clusters_with_pairs": 21,
+        "total_pairs": 25897,
+        "avg_cluster_size": 16.095238095238095,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.6666666666666666,
+          "pct_size_3_5": 0.23809523809523808,
+          "pct_size_6_plus": 0.09523809523809523
+        }
+      },
+      "2015": {
+        "equal_mc": 0.428915664491581,
+        "pair_weighted_mc": 0.12206413387934163,
+        "n_clusters_with_pairs": 24,
+        "total_pairs": 28778,
+        "avg_cluster_size": 14.958333333333334,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.6666666666666666,
+          "pct_size_3_5": 0.25,
+          "pct_size_6_plus": 0.08333333333333333
+        }
+      },
+      "2016": {
+        "equal_mc": 0.3989212257476656,
+        "pair_weighted_mc": 0.12011996517316109,
+        "n_clusters_with_pairs": 23,
+        "total_pairs": 28325,
+        "avg_cluster_size": 15.304347826086957,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.6521739130434783,
+          "pct_size_3_5": 0.2608695652173913,
+          "pct_size_6_plus": 0.08695652173913043
+        }
+      },
+      "2017": {
+        "equal_mc": 0.35261582086414517,
+        "pair_weighted_mc": 0.07049152959364315,
+        "n_clusters_with_pairs": 24,
+        "total_pairs": 30090,
+        "avg_cluster_size": 15.25,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.5833333333333334,
+          "pct_size_3_5": 0.3333333333333333,
+          "pct_size_6_plus": 0.08333333333333333
+        }
+      },
+      "2018": {
+        "equal_mc": 0.46928222337678793,
+        "pair_weighted_mc": 0.196085761693246,
+        "n_clusters_with_pairs": 28,
+        "total_pairs": 33267,
+        "avg_cluster_size": 13.928571428571429,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.75,
+          "pct_size_3_5": 0.17857142857142858,
+          "pct_size_6_plus": 0.07142857142857142
+        }
+      },
+      "2019": {
+        "equal_mc": 0.3303286228866164,
+        "pair_weighted_mc": 0.14723521714912408,
+        "n_clusters_with_pairs": 26,
+        "total_pairs": 37467,
+        "avg_cluster_size": 15.653846153846153,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.7307692307692307,
+          "pct_size_3_5": 0.19230769230769232,
+          "pct_size_6_plus": 0.07692307692307693
+        }
+      },
+      "2020": {
+        "equal_mc": 0.5472879552662023,
+        "pair_weighted_mc": 0.3275134619708428,
+        "n_clusters_with_pairs": 31,
+        "total_pairs": 55774,
+        "avg_cluster_size": 15.806451612903226,
+        "median_cluster_size": 2.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.6451612903225806,
+          "pct_size_3_5": 0.22580645161290322,
+          "pct_size_6_plus": 0.12903225806451613
+        }
+      }
+    },
+    "sic": {
+      "1996": {
+        "equal_mc": 0.20321814308649763,
+        "pair_weighted_mc": 0.18946790401227073,
+        "n_clusters_with_pairs": 134,
+        "total_pairs": 2569,
+        "avg_cluster_size": 4.246268656716418,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.4701492537313433,
+          "pct_size_3_5": 0.3358208955223881,
+          "pct_size_6_plus": 0.19402985074626866
+        }
+      },
+      "1997": {
+        "equal_mc": 0.18397615629675554,
+        "pair_weighted_mc": 0.21569211535843866,
+        "n_clusters_with_pairs": 140,
+        "total_pairs": 2966,
+        "avg_cluster_size": 4.4071428571428575,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.45,
+          "pct_size_3_5": 0.35,
+          "pct_size_6_plus": 0.2
+        }
+      },
+      "1998": {
+        "equal_mc": 0.2974625011774359,
+        "pair_weighted_mc": 0.33844993765308873,
+        "n_clusters_with_pairs": 154,
+        "total_pairs": 3123,
+        "avg_cluster_size": 4.266233766233766,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.4935064935064935,
+          "pct_size_3_5": 0.33116883116883117,
+          "pct_size_6_plus": 0.17532467532467533
+        }
+      },
+      "1999": {
+        "equal_mc": 0.1529178357807624,
+        "pair_weighted_mc": 0.18949670490440151,
+        "n_clusters_with_pairs": 160,
+        "total_pairs": 3342,
+        "avg_cluster_size": 4.3375,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.46875,
+          "pct_size_3_5": 0.35625,
+          "pct_size_6_plus": 0.175
+        }
+      },
+      "2000": {
+        "equal_mc": 0.1222194087883948,
+        "pair_weighted_mc": 0.19695470198908743,
+        "n_clusters_with_pairs": 163,
+        "total_pairs": 3511,
+        "avg_cluster_size": 4.3496932515337425,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.4601226993865031,
+          "pct_size_3_5": 0.36809815950920244,
+          "pct_size_6_plus": 0.17177914110429449
+        }
+      },
+      "2001": {
+        "equal_mc": 0.2296429639045881,
+        "pair_weighted_mc": 0.18510567400174013,
+        "n_clusters_with_pairs": 164,
+        "total_pairs": 3677,
+        "avg_cluster_size": 4.439024390243903,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.4329268292682927,
+          "pct_size_3_5": 0.39634146341463417,
+          "pct_size_6_plus": 0.17073170731707318
+        }
+      },
+      "2002": {
+        "equal_mc": 0.288413969879174,
+        "pair_weighted_mc": 0.2672647792991047,
+        "n_clusters_with_pairs": 165,
+        "total_pairs": 3888,
+        "avg_cluster_size": 4.496969696969697,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.43636363636363634,
+          "pct_size_3_5": 0.3878787878787879,
+          "pct_size_6_plus": 0.17575757575757575
+        }
+      },
+      "2003": {
+        "equal_mc": 0.23790318240150596,
+        "pair_weighted_mc": 0.22524260975621913,
+        "n_clusters_with_pairs": 163,
+        "total_pairs": 4029,
+        "avg_cluster_size": 4.54601226993865,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.44171779141104295,
+          "pct_size_3_5": 0.3803680981595092,
+          "pct_size_6_plus": 0.17791411042944785
+        }
+      },
+      "2004": {
+        "equal_mc": 0.2236385234679919,
+        "pair_weighted_mc": 0.29132937263829745,
+        "n_clusters_with_pairs": 168,
+        "total_pairs": 4130,
+        "avg_cluster_size": 4.529761904761905,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.40476190476190477,
+          "pct_size_3_5": 0.4226190476190476,
+          "pct_size_6_plus": 0.17261904761904762
+        }
+      },
+      "2005": {
+        "equal_mc": 0.23781031475547978,
+        "pair_weighted_mc": 0.2595472027665603,
+        "n_clusters_with_pairs": 172,
+        "total_pairs": 4585,
+        "avg_cluster_size": 4.6104651162790695,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.4127906976744186,
+          "pct_size_3_5": 0.4127906976744186,
+          "pct_size_6_plus": 0.1744186046511628
+        }
+      },
+      "2006": {
+        "equal_mc": 0.18533624559362497,
+        "pair_weighted_mc": 0.16804164499489652,
+        "n_clusters_with_pairs": 181,
+        "total_pairs": 4818,
+        "avg_cluster_size": 4.580110497237569,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.4088397790055249,
+          "pct_size_3_5": 0.425414364640884,
+          "pct_size_6_plus": 0.16574585635359115
+        }
+      },
+      "2007": {
+        "equal_mc": 0.1804856606568909,
+        "pair_weighted_mc": 0.2628977873941384,
+        "n_clusters_with_pairs": 192,
+        "total_pairs": 5191,
+        "avg_cluster_size": 4.567708333333333,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.4114583333333333,
+          "pct_size_3_5": 0.421875,
+          "pct_size_6_plus": 0.16666666666666666
+        }
+      },
+      "2008": {
+        "equal_mc": 0.3200995533533615,
+        "pair_weighted_mc": 0.3149043413505034,
+        "n_clusters_with_pairs": 206,
+        "total_pairs": 7056,
+        "avg_cluster_size": 5.174757281553398,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.3300970873786408,
+          "pct_size_3_5": 0.46116504854368934,
+          "pct_size_6_plus": 0.2087378640776699
+        }
+      },
+      "2009": {
+        "equal_mc": 0.2875310452127806,
+        "pair_weighted_mc": 0.24290847646161295,
+        "n_clusters_with_pairs": 214,
+        "total_pairs": 7422,
+        "avg_cluster_size": 5.177570093457944,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.37383177570093457,
+          "pct_size_3_5": 0.4158878504672897,
+          "pct_size_6_plus": 0.2102803738317757
+        }
+      },
+      "2010": {
+        "equal_mc": 0.3287056326263898,
+        "pair_weighted_mc": 0.3028502007027636,
+        "n_clusters_with_pairs": 212,
+        "total_pairs": 7553,
+        "avg_cluster_size": 5.254716981132075,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.36792452830188677,
+          "pct_size_3_5": 0.42924528301886794,
+          "pct_size_6_plus": 0.2028301886792453
+        }
+      },
+      "2011": {
+        "equal_mc": 0.29469182360999013,
+        "pair_weighted_mc": 0.28976215961758445,
+        "n_clusters_with_pairs": 215,
+        "total_pairs": 8091,
+        "avg_cluster_size": 5.306976744186047,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.34418604651162793,
+          "pct_size_3_5": 0.4372093023255814,
+          "pct_size_6_plus": 0.2186046511627907
+        }
+      },
+      "2012": {
+        "equal_mc": 0.1591475820125002,
+        "pair_weighted_mc": 0.2044549114643538,
+        "n_clusters_with_pairs": 213,
+        "total_pairs": 8172,
+        "avg_cluster_size": 5.403755868544601,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.323943661971831,
+          "pct_size_3_5": 0.45539906103286387,
+          "pct_size_6_plus": 0.22065727699530516
+        }
+      },
+      "2013": {
+        "equal_mc": 0.1433944918139253,
+        "pair_weighted_mc": 0.21455325057299515,
+        "n_clusters_with_pairs": 213,
+        "total_pairs": 8196,
+        "avg_cluster_size": 5.389671361502347,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.3145539906103286,
+          "pct_size_3_5": 0.48826291079812206,
+          "pct_size_6_plus": 0.19718309859154928
+        }
+      },
+      "2014": {
+        "equal_mc": 0.21755874520974344,
+        "pair_weighted_mc": 0.24517528955291829,
+        "n_clusters_with_pairs": 210,
+        "total_pairs": 8076,
+        "avg_cluster_size": 5.390476190476191,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.30952380952380953,
+          "pct_size_3_5": 0.48095238095238096,
+          "pct_size_6_plus": 0.20952380952380953
+        }
+      },
+      "2015": {
+        "equal_mc": 0.20843578976132454,
+        "pair_weighted_mc": 0.23747459858443265,
+        "n_clusters_with_pairs": 219,
+        "total_pairs": 8333,
+        "avg_cluster_size": 5.351598173515982,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.3333333333333333,
+          "pct_size_3_5": 0.45662100456621,
+          "pct_size_6_plus": 0.2100456621004566
+        }
+      },
+      "2016": {
+        "equal_mc": 0.19298707000037563,
+        "pair_weighted_mc": 0.27467832102718004,
+        "n_clusters_with_pairs": 223,
+        "total_pairs": 8666,
+        "avg_cluster_size": 5.417040358744394,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.3183856502242152,
+          "pct_size_3_5": 0.47533632286995514,
+          "pct_size_6_plus": 0.2062780269058296
+        }
+      },
+      "2017": {
+        "equal_mc": 0.1670279660917035,
+        "pair_weighted_mc": 0.18658721557258917,
+        "n_clusters_with_pairs": 224,
+        "total_pairs": 8824,
+        "avg_cluster_size": 5.459821428571429,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.3169642857142857,
+          "pct_size_3_5": 0.4642857142857143,
+          "pct_size_6_plus": 0.21875
+        }
+      },
+      "2018": {
+        "equal_mc": 0.296453485259106,
+        "pair_weighted_mc": 0.3298969063764824,
+        "n_clusters_with_pairs": 222,
+        "total_pairs": 9401,
+        "avg_cluster_size": 5.617117117117117,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.2972972972972973,
+          "pct_size_3_5": 0.47297297297297297,
+          "pct_size_6_plus": 0.22972972972972974
+        }
+      },
+      "2019": {
+        "equal_mc": 0.22644690917652135,
+        "pair_weighted_mc": 0.24371241765510623,
+        "n_clusters_with_pairs": 223,
+        "total_pairs": 10220,
+        "avg_cluster_size": 5.771300448430493,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.2825112107623318,
+          "pct_size_3_5": 0.4663677130044843,
+          "pct_size_6_plus": 0.25112107623318386
+        }
+      },
+      "2020": {
+        "equal_mc": 0.39162799974699025,
+        "pair_weighted_mc": 0.4223217600035477,
+        "n_clusters_with_pairs": 223,
+        "total_pairs": 11508,
+        "avg_cluster_size": 5.914798206278027,
+        "median_cluster_size": 3.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.3183856502242152,
+          "pct_size_3_5": 0.4170403587443946,
+          "pct_size_6_plus": 0.2645739910313901
+        }
+      }
+    },
+    "sbert": {
+      "1996": {
+        "equal_mc": 0.17415105598756964,
+        "pair_weighted_mc": 0.1523783801360863,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 5550,
+        "avg_cluster_size": 14.081632653061224,
+        "median_cluster_size": 13.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "1997": {
+        "equal_mc": 0.194800691609473,
+        "pair_weighted_mc": 0.1922089514865821,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 6561,
+        "avg_cluster_size": 15.081632653061224,
+        "median_cluster_size": 13.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "1998": {
+        "equal_mc": 0.3043969608189447,
+        "pair_weighted_mc": 0.31035709588885213,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 7115,
+        "avg_cluster_size": 15.73469387755102,
+        "median_cluster_size": 14.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "1999": {
+        "equal_mc": 0.17272492192951874,
+        "pair_weighted_mc": 0.1563842150053258,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 7029,
+        "avg_cluster_size": 16.387755102040817,
+        "median_cluster_size": 16.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2000": {
+        "equal_mc": 0.14812002662515109,
+        "pair_weighted_mc": 0.133390145730886,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 7297,
+        "avg_cluster_size": 16.714285714285715,
+        "median_cluster_size": 16.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2001": {
+        "equal_mc": 0.21745038498314065,
+        "pair_weighted_mc": 0.21250133373161315,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 8559,
+        "avg_cluster_size": 17.102040816326532,
+        "median_cluster_size": 16.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2002": {
+        "equal_mc": 0.2693977388993561,
+        "pair_weighted_mc": 0.25515468665791574,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 8884,
+        "avg_cluster_size": 17.387755102040817,
+        "median_cluster_size": 16.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2003": {
+        "equal_mc": 0.20749872644589556,
+        "pair_weighted_mc": 0.20636840945675292,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 8899,
+        "avg_cluster_size": 17.510204081632654,
+        "median_cluster_size": 15.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2004": {
+        "equal_mc": 0.24105696397879062,
+        "pair_weighted_mc": 0.2184429734529161,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 8689,
+        "avg_cluster_size": 17.857142857142858,
+        "median_cluster_size": 17.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2005": {
+        "equal_mc": 0.2241851775877635,
+        "pair_weighted_mc": 0.20003026317170783,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 10355,
+        "avg_cluster_size": 18.551020408163264,
+        "median_cluster_size": 16.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2006": {
+        "equal_mc": 0.16671157755572502,
+        "pair_weighted_mc": 0.1521370823778074,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 12101,
+        "avg_cluster_size": 19.26530612244898,
+        "median_cluster_size": 16.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2007": {
+        "equal_mc": 0.1795922069510722,
+        "pair_weighted_mc": 0.17366226571995616,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 12037,
+        "avg_cluster_size": 20.081632653061224,
+        "median_cluster_size": 19.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2008": {
+        "equal_mc": 0.3072335541830647,
+        "pair_weighted_mc": 0.30768498588229026,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 17837,
+        "avg_cluster_size": 23.979591836734695,
+        "median_cluster_size": 23.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2009": {
+        "equal_mc": 0.23858324874243692,
+        "pair_weighted_mc": 0.2225959540820562,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 19513,
+        "avg_cluster_size": 24.693877551020407,
+        "median_cluster_size": 21.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2010": {
+        "equal_mc": 0.29324954392149827,
+        "pair_weighted_mc": 0.2968395301298227,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 19224,
+        "avg_cluster_size": 24.918367346938776,
+        "median_cluster_size": 23.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2011": {
+        "equal_mc": 0.27897663400723177,
+        "pair_weighted_mc": 0.2732360954394792,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 21072,
+        "avg_cluster_size": 25.408163265306122,
+        "median_cluster_size": 21.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2012": {
+        "equal_mc": 0.16800190567890985,
+        "pair_weighted_mc": 0.14813773772000324,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 21575,
+        "avg_cluster_size": 25.755102040816325,
+        "median_cluster_size": 20.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2013": {
+        "equal_mc": 0.164715316515893,
+        "pair_weighted_mc": 0.1474294850392471,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 22262,
+        "avg_cluster_size": 25.612244897959183,
+        "median_cluster_size": 21.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2014": {
+        "equal_mc": 0.18297833620511633,
+        "pair_weighted_mc": 0.18938493319532287,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 19351,
+        "avg_cluster_size": 25.408163265306122,
+        "median_cluster_size": 24.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2015": {
+        "equal_mc": 0.18382896836755647,
+        "pair_weighted_mc": 0.1663151546128053,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 22536,
+        "avg_cluster_size": 26.0,
+        "median_cluster_size": 22.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2016": {
+        "equal_mc": 0.18254538368032378,
+        "pair_weighted_mc": 0.18906800878886598,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 22913,
+        "avg_cluster_size": 26.714285714285715,
+        "median_cluster_size": 24.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2017": {
+        "equal_mc": 0.13659069484503994,
+        "pair_weighted_mc": 0.11337498290425586,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 21964,
+        "avg_cluster_size": 26.979591836734695,
+        "median_cluster_size": 24.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2018": {
+        "equal_mc": 0.26798739243367625,
+        "pair_weighted_mc": 0.2659567207553978,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 24737,
+        "avg_cluster_size": 27.612244897959183,
+        "median_cluster_size": 23.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2019": {
+        "equal_mc": 0.20164865853798775,
+        "pair_weighted_mc": 0.18806331166732665,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 26269,
+        "avg_cluster_size": 28.408163265306122,
+        "median_cluster_size": 25.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      },
+      "2020": {
+        "equal_mc": 0.37720148603328857,
+        "pair_weighted_mc": 0.38373515629187577,
+        "n_clusters_with_pairs": 49,
+        "total_pairs": 27583,
+        "avg_cluster_size": 29.06122448979592,
+        "median_cluster_size": 23.0,
+        "cluster_size_distribution": {
+          "pct_size_2": 0.0,
+          "pct_size_3_5": 0.0,
+          "pct_size_6_plus": 1.0
+        }
+      }
+    }
+  },
+  "common_years": [
+    1996,
+    1997,
+    1998,
+    1999,
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020
+  ],
+  "verdict": {
+    "sae_pw_beats_sic": false,
+    "sae_pw_beats_sbert": false,
+    "pw_delta_sic": -0.101001,
+    "pw_delta_sbert": -0.059244,
+    "pct_advantage_surviving_sic": -79.0,
+    "pct_advantage_surviving_sbert": -42.4,
+    "temporal_trend_sic_survives": false,
+    "temporal_trend_sbert_survives": false
+  }
+}

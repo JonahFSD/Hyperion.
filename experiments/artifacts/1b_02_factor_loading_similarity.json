@@ -1,0 +1,265 @@
+{
+  "test": "1B-02_factor_loading_similarity",
+  "question": "Do SAE clusters share FF5 factor loadings?",
+  "regression_check": {
+    "n_companies_with_betas": 1531,
+    "n_skipped": 71,
+    "median_r_squared": 0.03013478423406213,
+    "median_obs_per_company": 240,
+    "expected_from_1B": {
+      "n_regressed": 1531,
+      "n_skipped": 71,
+      "median_r_squared": 0.0301,
+      "median_obs": 240
+    },
+    "factor_means": {
+      "Mkt-RF": 1.939613784596609,
+      "SMB": 1.2502187671202905,
+      "HML": -1.9907276261810376,
+      "RMW": 0.21824878164084677,
+      "CMA": -4.264405909899034
+    },
+    "factor_stds": {
+      "Mkt-RF": 49.547027138217786,
+      "SMB": 129.1571455937124,
+      "HML": 95.99304477740777,
+      "RMW": 54.885348539728604,
+      "CMA": 146.46643203811618
+    }
+  },
+  "sae_cluster_stats": {
+    "total_cluster_year_instances": 19083,
+    "singletons": 18524,
+    "multi_member": 559,
+    "multi_member_with_valid_betas": 555,
+    "usable_cluster_size_distribution": {
+      "min": 2,
+      "max": 313,
+      "median": 2.0,
+      "mean": 14.697297297297297
+    }
+  },
+  "sic_cluster_stats": {
+    "total_cluster_year_instances": 7991,
+    "singletons": 3026,
+    "multi_member": 4965,
+    "multi_member_with_valid_betas": 4962,
+    "usable_cluster_size_distribution": {
+      "min": 2,
+      "max": 57,
+      "median": 3.0,
+      "mean": 4.963119709794437
+    }
+  },
+  "repeated_measures": {
+    "unique_ciks": 1029,
+    "mean_appearances": 7.927113702623907,
+    "median_appearances": 6.0,
+    "max_appearances": 25,
+    "ciks_above_10": 313
+  },
+  "sae_icc_per_factor": {
+    "Mkt-RF": {
+      "icc": -0.6302905182969125,
+      "f_statistic": 0.05758425924850764,
+      "p_value": 1.0,
+      "df_between": 554,
+      "df_within": 7602,
+      "ms_between": 277.22919101778007,
+      "ms_within": 4814.322431784425,
+      "within_cluster_std": 69.38531856080525,
+      "population_std": 49.547027138217786,
+      "variance_ratio": 1.4003931732825463,
+      "n_groups": 555,
+      "n_observations": 8157,
+      "k0_harmonic": 2.437624241266403,
+      "k0_arithmetic": 14.697297297297297
+    },
+    "SMB": {
+      "icc": -0.6668927556842912,
+      "f_statistic": 0.024751927178646126,
+      "p_value": 1.0,
+      "df_between": 554,
+      "df_within": 7602,
+      "ms_between": 820.357845174659,
+      "ms_within": 33143.19080101345,
+      "within_cluster_std": 182.05271434673378,
+      "population_std": 129.1571455937124,
+      "variance_ratio": 1.409544268804253,
+      "n_groups": 555,
+      "n_observations": 8157,
+      "k0_harmonic": 2.437624241266403,
+      "k0_arithmetic": 14.697297297297297
+    },
+    "HML": {
+      "icc": -0.6601191370695791,
+      "f_statistic": 0.03071871487183289,
+      "p_value": 1.0,
+      "df_between": 554,
+      "df_within": 7602,
+      "ms_between": 710.378112565322,
+      "ms_within": 23125.254931048356,
+      "within_cluster_std": 152.06990146326905,
+      "population_std": 95.99304477740777,
+      "variance_ratio": 1.584176247517665,
+      "n_groups": 555,
+      "n_observations": 8157,
+      "k0_harmonic": 2.437624241266403,
+      "k0_arithmetic": 14.697297297297297
+    },
+    "RMW": {
+      "icc": -0.6713774013103749,
+      "f_statistic": 0.020828074383721112,
+      "p_value": 1.0,
+      "df_between": 554,
+      "df_within": 7602,
+      "ms_between": 100.67104060256229,
+      "ms_within": 4833.430049647083,
+      "within_cluster_std": 69.52287429074752,
+      "population_std": 54.885348539728604,
+      "variance_ratio": 1.2666927721233945,
+      "n_groups": 555,
+      "n_observations": 8157,
+      "k0_harmonic": 2.437624241266403,
+      "k0_arithmetic": 14.697297297297297
+    },
+    "CMA": {
+      "icc": -0.6447265110243083,
+      "f_statistic": 0.0444606068390071,
+      "p_value": 1.0,
+      "df_between": 554,
+      "df_within": 7602,
+      "ms_between": 2341.492226673911,
+      "ms_within": 52664.42347835038,
+      "within_cluster_std": 229.48730570197205,
+      "population_std": 146.46643203811618,
+      "variance_ratio": 1.5668252616562042,
+      "n_groups": 555,
+      "n_observations": 8157,
+      "k0_harmonic": 2.437624241266403,
+      "k0_arithmetic": 14.697297297297297
+    }
+  },
+  "sic_icc_per_factor": {
+    "Mkt-RF": {
+      "icc": 0.12544134218867822,
+      "f_statistic": 1.432646132166767,
+      "p_value": 1.1102230246251565e-16,
+      "df_between": 4961,
+      "df_within": 19665,
+      "ms_between": 2607.145184547737,
+      "ms_within": 1819.8109958979405,
+      "within_cluster_std": 42.65924279564677,
+      "population_std": 49.547027138217786,
+      "variance_ratio": 0.8609849119028542,
+      "n_groups": 4962,
+      "n_observations": 24627,
+      "k0_harmonic": 3.0163454412494146,
+      "k0_arithmetic": 4.963119709794437
+    },
+    "SMB": {
+      "icc": 0.11933219873012905,
+      "f_statistic": 1.408720669831316,
+      "p_value": 1.1102230246251565e-16,
+      "df_between": 4961,
+      "df_within": 19665,
+      "ms_between": 17364.215535845316,
+      "ms_within": 12326.230393087477,
+      "within_cluster_std": 111.02355782935204,
+      "population_std": 129.1571455937124,
+      "variance_ratio": 0.859600584381116,
+      "n_groups": 4962,
+      "n_observations": 24627,
+      "k0_harmonic": 3.0163454412494146,
+      "k0_arithmetic": 4.963119709794437
+    },
+    "HML": {
+      "icc": 0.14988992815051352,
+      "f_statistic": 1.5318367778920428,
+      "p_value": 1.1102230246251565e-16,
+      "df_between": 4961,
+      "df_within": 19665,
+      "ms_between": 10267.87530112894,
+      "ms_within": 6702.982621463457,
+      "within_cluster_std": 81.87174495186638,
+      "population_std": 95.99304477740777,
+      "variance_ratio": 0.8528924688420251,
+      "n_groups": 4962,
+      "n_observations": 24627,
+      "k0_harmonic": 3.0163454412494146,
+      "k0_arithmetic": 4.963119709794437
+    },
+    "RMW": {
+      "icc": 0.09616138870215257,
+      "f_statistic": 1.3209156621661153,
+      "p_value": 1.1102230246251565e-16,
+      "df_between": 4961,
+      "df_within": 19665,
+      "ms_between": 2929.613801667132,
+      "ms_within": 2217.8658983140367,
+      "within_cluster_std": 47.09422361939983,
+      "population_std": 54.885348539728604,
+      "variance_ratio": 0.8580472725851565,
+      "n_groups": 4962,
+      "n_observations": 24627,
+      "k0_harmonic": 3.0163454412494146,
+      "k0_arithmetic": 4.963119709794437
+    },
+    "CMA": {
+      "icc": 0.12719239586542494,
+      "f_statistic": 1.43956560599707,
+      "p_value": 1.1102230246251565e-16,
+      "df_between": 4961,
+      "df_within": 19665,
+      "ms_between": 22330.073305616803,
+      "ms_within": 15511.674641705944,
+      "within_cluster_std": 124.54587364383431,
+      "population_std": 146.46643203811618,
+      "variance_ratio": 0.8503373224208991,
+      "n_groups": 4962,
+      "n_observations": 24627,
+      "k0_harmonic": 3.0163454412494146,
+      "k0_arithmetic": 4.963119709794437
+    }
+  },
+  "sae_vs_sic_comparison": {
+    "Mkt-RF": {
+      "sae_icc": -0.6302905182969125,
+      "sic_icc": 0.12544134218867822,
+      "sae_less_than_sic": true
+    },
+    "SMB": {
+      "sae_icc": -0.6668927556842912,
+      "sic_icc": 0.11933219873012905,
+      "sae_less_than_sic": true
+    },
+    "HML": {
+      "sae_icc": -0.6601191370695791,
+      "sic_icc": 0.14988992815051352,
+      "sae_less_than_sic": true
+    },
+    "RMW": {
+      "sae_icc": -0.6713774013103749,
+      "sic_icc": 0.09616138870215257,
+      "sae_less_than_sic": true
+    },
+    "CMA": {
+      "sae_icc": -0.6447265110243083,
+      "sic_icc": 0.12719239586542494,
+      "sae_less_than_sic": true
+    }
+  },
+  "computation_sanity": "VALID",
+  "permutation_test": {
+    "factor": "Mkt-RF",
+    "observed_icc": -0.6302905182969124,
+    "null_mean": -0.04972909706709414,
+    "null_std": 0.23184248674896804,
+    "null_p95": 0.29997121998407816,
+    "null_p99": 0.3949225093773442,
+    "p_value": 0.999,
+    "n_permutations": 1000
+  },
+  "verdict": "FLAG_1_INVALIDATED",
+  "interpretation": "All SAE factor loading ICCs are below 0.05. SAE cluster membership does NOT predict shared FF5 factor exposure. The 98.4% survival ratio in 1B is the expected result: removing factors that explain 3% of variance changes correlations by approximately 3%. Flag 1 is invalidated."
+}

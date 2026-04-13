@@ -1,0 +1,369 @@
+{
+  "test": "T02_top1pct_sic_composition",
+  "overall": {
+    "top1pct_same_sic_rate": 0.05706128357728808,
+    "baseline_same_sic_rate": 0.04596485069214689,
+    "enrichment_ratio": 1.241411267915573,
+    "top1pct_same_sic_mean_corr": 0.21997330685945993,
+    "top1pct_cross_sic_mean_corr": 0.1398864678426443,
+    "baseline_mean_corr": 0.16086527553534516,
+    "n_pairs": 14920749,
+    "n_top1pct": 149208
+  },
+  "per_year": {
+    "1996": {
+      "top1pct_same_sic_rate": 0.06014888337468983,
+      "baseline_same_sic_rate": 0.0442691571485665,
+      "enrichment_ratio": 1.3587085738459228,
+      "top1pct_same_sic_mean_corr": 0.17350888880219442,
+      "top1pct_cross_sic_mean_corr": 0.10233313982531508,
+      "baseline_mean_corr": 0.10744288552049898,
+      "n_pairs": 237705,
+      "n_top1pct": 10075
+    },
+    "1997": {
+      "top1pct_same_sic_rate": 0.057146103158373096,
+      "baseline_same_sic_rate": 0.043798009214827564,
+      "enrichment_ratio": 1.3047648553630289,
+      "top1pct_same_sic_mean_corr": 0.19716055859456336,
+      "top1pct_cross_sic_mean_corr": 0.13520049242818988,
+      "baseline_mean_corr": 0.14646507353110436,
+      "n_pairs": 271953,
+      "n_top1pct": 8802
+    },
+    "1998": {
+      "top1pct_same_sic_rate": 0.062146148782093485,
+      "baseline_same_sic_rate": 0.04401435140734752,
+      "enrichment_ratio": 1.411951938288,
+      "top1pct_same_sic_mean_corr": 0.29552260548805703,
+      "top1pct_cross_sic_mean_corr": 0.22337754333880286,
+      "baseline_mean_corr": 0.2681436065505983,
+      "n_pairs": 296835,
+      "n_top1pct": 7595
+    },
+    "1999": {
+      "top1pct_same_sic_rate": 0.05997001499250375,
+      "baseline_same_sic_rate": 0.04429772393424906,
+      "enrichment_ratio": 1.3537944992730782,
+      "top1pct_same_sic_mean_corr": 0.18746555302881235,
+      "top1pct_cross_sic_mean_corr": 0.09483356707441079,
+      "baseline_mean_corr": 0.09206999593111832,
+      "n_pairs": 322003,
+      "n_top1pct": 8004
+    },
+    "2000": {
+      "top1pct_same_sic_rate": 0.06535609587859977,
+      "baseline_same_sic_rate": 0.04417994393544516,
+      "enrichment_ratio": 1.4793159532772784,
+      "top1pct_same_sic_mean_corr": 0.1180374491659905,
+      "top1pct_cross_sic_mean_corr": 0.03624687804524338,
+      "baseline_mean_corr": 0.036260682287753636,
+      "n_pairs": 334971,
+      "n_top1pct": 5799
+    },
+    "2001": {
+      "top1pct_same_sic_rate": 0.06313603322949117,
+      "baseline_same_sic_rate": 0.04470164213023556,
+      "enrichment_ratio": 1.4123873356944723,
+      "top1pct_same_sic_mean_corr": 0.17997903755945804,
+      "top1pct_cross_sic_mean_corr": 0.1577237800318266,
+      "baseline_mean_corr": 0.15591443725932436,
+      "n_pairs": 350703,
+      "n_top1pct": 4815
+    },
+    "2002": {
+      "top1pct_same_sic_rate": 0.06485163658611195,
+      "baseline_same_sic_rate": 0.0450478034678892,
+      "enrichment_ratio": 1.439618174332057,
+      "top1pct_same_sic_mean_corr": 0.19268520387503538,
+      "top1pct_cross_sic_mean_corr": 0.1712623387197416,
+      "baseline_mean_corr": 0.20677203612765752,
+      "n_pairs": 362526,
+      "n_top1pct": 3269
+    },
+    "2003": {
+      "top1pct_same_sic_rate": 0.060778727445394115,
+      "baseline_same_sic_rate": 0.04525462868520045,
+      "enrichment_ratio": 1.3430389158241063,
+      "top1pct_same_sic_mean_corr": 0.20040961163151216,
+      "top1pct_cross_sic_mean_corr": 0.1242778194397037,
+      "baseline_mean_corr": 0.14238966338346148,
+      "n_pairs": 367653,
+      "n_top1pct": 2106
+    },
+    "2004": {
+      "top1pct_same_sic_rate": 0.05566218809980806,
+      "baseline_same_sic_rate": 0.045528604118993135,
+      "enrichment_ratio": 1.2225762062533234,
+      "top1pct_same_sic_mean_corr": 0.15947480647295817,
+      "top1pct_cross_sic_mean_corr": 0.1188508036106985,
+      "baseline_mean_corr": 0.16354063189503226,
+      "n_pairs": 382375,
+      "n_top1pct": 1563
+    },
+    "2005": {
+      "top1pct_same_sic_rate": 0.0521866960676222,
+      "baseline_same_sic_rate": 0.044821001923980947,
+      "enrichment_ratio": 1.1643357762535942,
+      "top1pct_same_sic_mean_corr": 0.178782521714503,
+      "top1pct_cross_sic_mean_corr": 0.13020517140750276,
+      "baseline_mean_corr": 0.15679478755948012,
+      "n_pairs": 412686,
+      "n_top1pct": 2721
+    },
+    "2006": {
+      "top1pct_same_sic_rate": 0.04915254237288136,
+      "baseline_same_sic_rate": 0.04434773621870338,
+      "enrichment_ratio": 1.108343887734941,
+      "top1pct_same_sic_mean_corr": 0.1155657848414131,
+      "top1pct_cross_sic_mean_corr": 0.07873888455219141,
+      "baseline_mean_corr": 0.09195875033667682,
+      "n_pairs": 445096,
+      "n_top1pct": 2950
+    },
+    "2007": {
+      "top1pct_same_sic_rate": 0.05185185185185185,
+      "baseline_same_sic_rate": 0.04383875476598103,
+      "enrichment_ratio": 1.1827856910773615,
+      "top1pct_same_sic_mean_corr": 0.1664490440914358,
+      "top1pct_cross_sic_mean_corr": 0.15627376715050817,
+      "baseline_mean_corr": 0.1279464298838338,
+      "n_pairs": 483636,
+      "n_top1pct": 2970
+    },
+    "2008": {
+      "top1pct_same_sic_rate": 0.05080660114963842,
+      "baseline_same_sic_rate": 0.04560292390331766,
+      "enrichment_ratio": 1.1141084123762115,
+      "top1pct_same_sic_mean_corr": 0.37116729178251595,
+      "top1pct_cross_sic_mean_corr": 0.2264123754829643,
+      "baseline_mean_corr": 0.24516703632300313,
+      "n_pairs": 686206,
+      "n_top1pct": 5393
+    },
+    "2009": {
+      "top1pct_same_sic_rate": 0.05366601616950097,
+      "baseline_same_sic_rate": 0.04623960585800173,
+      "enrichment_ratio": 1.1606071283199337,
+      "top1pct_same_sic_mean_corr": 0.21596441900374766,
+      "top1pct_cross_sic_mean_corr": 0.13983671525835528,
+      "baseline_mean_corr": 0.18612480662399367,
+      "n_pairs": 724206,
+      "n_top1pct": 7174
+    },
+    "2010": {
+      "top1pct_same_sic_rate": 0.056992547128452434,
+      "baseline_same_sic_rate": 0.045653292181069956,
+      "enrichment_ratio": 1.2483775956925245,
+      "top1pct_same_sic_mean_corr": 0.2600518053914775,
+      "top1pct_cross_sic_mean_corr": 0.15605471445323787,
+      "baseline_mean_corr": 0.2547798674578488,
+      "n_pairs": 738720,
+      "n_top1pct": 6843
+    },
+    "2011": {
+      "top1pct_same_sic_rate": 0.05944831959416614,
+      "baseline_same_sic_rate": 0.04656714621709795,
+      "enrichment_ratio": 1.276615047806787,
+      "top1pct_same_sic_mean_corr": 0.26026342636608435,
+      "top1pct_cross_sic_mean_corr": 0.17820798415384037,
+      "baseline_mean_corr": 0.23032412140614472,
+      "n_pairs": 764466,
+      "n_top1pct": 6308
+    },
+    "2012": {
+      "top1pct_same_sic_rate": 0.05917912822144448,
+      "baseline_same_sic_rate": 0.04634733427767855,
+      "enrichment_ratio": 1.2768615313857625,
+      "top1pct_same_sic_mean_corr": 0.18558962815839267,
+      "top1pct_cross_sic_mean_corr": 0.08324215966603495,
+      "baseline_mean_corr": 0.1131302705729653,
+      "n_pairs": 779376,
+      "n_top1pct": 6286
+    },
+    "2013": {
+      "top1pct_same_sic_rate": 0.05631349782293178,
+      "baseline_same_sic_rate": 0.046307291345382764,
+      "enrichment_ratio": 1.2160827417634463,
+      "top1pct_same_sic_mean_corr": 0.19446684697340624,
+      "top1pct_cross_sic_mean_corr": 0.08807197240047121,
+      "baseline_mean_corr": 0.10007576424802145,
+      "n_pairs": 778128,
+      "n_top1pct": 6890
+    },
+    "2014": {
+      "top1pct_same_sic_rate": 0.058934642992066494,
+      "baseline_same_sic_rate": 0.045946262594704364,
+      "enrichment_ratio": 1.2826863310283507,
+      "top1pct_same_sic_mean_corr": 0.21458820514928126,
+      "top1pct_cross_sic_mean_corr": 0.1121136067501575,
+      "baseline_mean_corr": 0.12721040974393022,
+      "n_pairs": 768180,
+      "n_top1pct": 5294
+    },
+    "2015": {
+      "top1pct_same_sic_rate": 0.057320135913724334,
+      "baseline_same_sic_rate": 0.046046543849492055,
+      "enrichment_ratio": 1.2448303634053663,
+      "top1pct_same_sic_mean_corr": 0.18917891898081976,
+      "top1pct_cross_sic_mean_corr": 0.10200390751166995,
+      "baseline_mean_corr": 0.11422655464161642,
+      "n_pairs": 808356,
+      "n_top1pct": 6769
+    },
+    "2016": {
+      "top1pct_same_sic_rate": 0.051218299353555444,
+      "baseline_same_sic_rate": 0.04552000009373488,
+      "enrichment_ratio": 1.1251823209157867,
+      "top1pct_same_sic_mean_corr": 0.19404102331501916,
+      "top1pct_cross_sic_mean_corr": 0.07838248868141635,
+      "baseline_mean_corr": 0.0949052984763986,
+      "n_pairs": 853471,
+      "n_top1pct": 6033
+    },
+    "2017": {
+      "top1pct_same_sic_rate": 0.05149744338933528,
+      "baseline_same_sic_rate": 0.04593542937458025,
+      "enrichment_ratio": 1.1210833139143996,
+      "top1pct_same_sic_mean_corr": 0.1361123880474579,
+      "top1pct_cross_sic_mean_corr": 0.049875343920689846,
+      "baseline_mean_corr": 0.0491861898260327,
+      "n_pairs": 866586,
+      "n_top1pct": 5476
+    },
+    "2018": {
+      "top1pct_same_sic_rate": 0.0585298674470649,
+      "baseline_same_sic_rate": 0.046809044176035444,
+      "enrichment_ratio": 1.2503965521481444,
+      "top1pct_same_sic_mean_corr": 0.25101462452659684,
+      "top1pct_cross_sic_mean_corr": 0.13560653588596192,
+      "baseline_mean_corr": 0.21275241439248432,
+      "n_pairs": 909226,
+      "n_top1pct": 5809
+    },
+    "2019": {
+      "top1pct_same_sic_rate": 0.05883226860793344,
+      "baseline_same_sic_rate": 0.04732041580558447,
+      "enrichment_ratio": 1.2432745487623211,
+      "top1pct_same_sic_mean_corr": 0.2107128927828244,
+      "top1pct_cross_sic_mean_corr": 0.0943352985657083,
+      "baseline_mean_corr": 0.12648734605237275,
+      "n_pairs": 965355,
+      "n_top1pct": 6731
+    },
+    "2020": {
+      "top1pct_same_sic_rate": 0.05106037094509717,
+      "baseline_same_sic_rate": 0.04958869914909075,
+      "enrichment_ratio": 1.0296775640672036,
+      "top1pct_same_sic_mean_corr": 0.36992926935994336,
+      "top1pct_cross_sic_mean_corr": 0.3069635348771352,
+      "baseline_mean_corr": 0.33538506399944656,
+      "n_pairs": 1010331,
+      "n_top1pct": 13533
+    }
+  },
+  "top_sic_pairings": [
+    {
+      "sic_pair": "35-36",
+      "count": 2471,
+      "mean_corr": 0.2117713258206754
+    },
+    {
+      "sic_pair": "35-73",
+      "count": 2018,
+      "mean_corr": 0.1455579973079018
+    },
+    {
+      "sic_pair": "35-38",
+      "count": 1822,
+      "mean_corr": 0.16255065374121494
+    },
+    {
+      "sic_pair": "36-38",
+      "count": 1799,
+      "mean_corr": 0.16250905704199287
+    },
+    {
+      "sic_pair": "36-73",
+      "count": 1774,
+      "mean_corr": 0.14839030946858695
+    },
+    {
+      "sic_pair": "35-67",
+      "count": 1597,
+      "mean_corr": 0.14199431241405558
+    },
+    {
+      "sic_pair": "28-35",
+      "count": 1551,
+      "mean_corr": 0.14895832535236922
+    },
+    {
+      "sic_pair": "67-73",
+      "count": 1538,
+      "mean_corr": 0.09341214703582106
+    },
+    {
+      "sic_pair": "28-73",
+      "count": 1499,
+      "mean_corr": 0.08172298316684366
+    },
+    {
+      "sic_pair": "28-36",
+      "count": 1490,
+      "mean_corr": 0.14105878615412878
+    },
+    {
+      "sic_pair": "36-67",
+      "count": 1483,
+      "mean_corr": 0.15568867564154348
+    },
+    {
+      "sic_pair": "38-73",
+      "count": 1483,
+      "mean_corr": 0.10741784161338278
+    },
+    {
+      "sic_pair": "36-36",
+      "count": 1269,
+      "mean_corr": 0.20203549366746734
+    },
+    {
+      "sic_pair": "35-35",
+      "count": 1188,
+      "mean_corr": 0.24149979991758216
+    },
+    {
+      "sic_pair": "28-38",
+      "count": 1179,
+      "mean_corr": 0.10337252095468576
+    },
+    {
+      "sic_pair": "20-35",
+      "count": 1158,
+      "mean_corr": 0.1327182577797701
+    },
+    {
+      "sic_pair": "28-67",
+      "count": 1149,
+      "mean_corr": 0.11457686884176797
+    },
+    {
+      "sic_pair": "35-60",
+      "count": 1128,
+      "mean_corr": 0.18282538341178126
+    },
+    {
+      "sic_pair": "38-67",
+      "count": 1125,
+      "mean_corr": 0.11977074820074864
+    },
+    {
+      "sic_pair": "36-37",
+      "count": 1111,
+      "mean_corr": 0.16524530150712075
+    }
+  ],
+  "verdict": "FAIL",
+  "interpretation": "Top-1% is only 1.24x enriched for same-SIC (not >3x). Cross-SIC pairs have decent correlation (0.1399). Inversion is not driven by SIC composition; cosine anti-predicts across industries."
+}

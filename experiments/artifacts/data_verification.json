@@ -1,0 +1,84 @@
+{
+  "pairs_file_exists": true,
+  "pairs_row_count": 14920749,
+  "pairs_rows_in_range": true,
+  "pairs_has_required_columns": true,
+  "pairs_columns": [
+    "Company1",
+    "Company2",
+    "correlation",
+    "cosine_similarity",
+    "cosine_similarity_scaled",
+    "sum_abs_diff",
+    "sum_abs_diff_scaled_01",
+    "year"
+  ],
+  "population_baseline_mc": 0.160865,
+  "baseline_in_range": true,
+  "pairs_year_range": [
+    1996,
+    2020
+  ],
+  "pairs_nan_correlations": 0,
+  "companies_file_exists": true,
+  "companies_row_count": 27888,
+  "companies_rows_in_range": true,
+  "companies_columns": [
+    "__index_level_0__",
+    "cik",
+    "company_name",
+    "input_ids",
+    "input_ids_length",
+    "logged_monthly_returns_matrix",
+    "returns",
+    "section_1",
+    "sic_code",
+    "ticker",
+    "year"
+  ],
+  "cluster_sae_cd_has_year_and_clusters": true,
+  "cluster_sae_cd_row_count": 25,
+  "cluster_sae_cd_year_range": [
+    1996,
+    2020
+  ],
+  "cluster_bert_has_year_and_clusters": true,
+  "cluster_bert_row_count": 25,
+  "cluster_bert_year_range": [
+    1996,
+    2020
+  ],
+  "cluster_sbert_has_year_and_clusters": true,
+  "cluster_sbert_row_count": 25,
+  "cluster_sbert_year_range": [
+    1996,
+    2020
+  ],
+  "cluster_palm_has_year_and_clusters": true,
+  "cluster_palm_row_count": 25,
+  "cluster_palm_year_range": [
+    1996,
+    2020
+  ],
+  "cluster_rolling_cd_has_year_and_clusters": true,
+  "cluster_rolling_cd_row_count": 20,
+  "cluster_rolling_cd_year_range": [
+    2001,
+    2020
+  ],
+  "cluster_sic_has_year_and_clusters": true,
+  "cluster_sic_row_count": 28,
+  "cluster_sic_year_range": [
+    1993,
+    2020
+  ],
+  "cluster_industry_has_year_and_clusters": true,
+  "cluster_industry_row_count": 28,
+  "cluster_industry_year_range": [
+    1993,
+    2020
+  ],
+  "sae_cd_covers_1996_2020": true,
+  "all_passed": true,
+  "failures": []
+}

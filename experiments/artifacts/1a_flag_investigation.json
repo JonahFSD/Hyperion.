@@ -1,0 +1,551 @@
+{
+  "temporal_decomposition": {
+    "trend_sae": {
+      "label": "SAE",
+      "slope": 0.008501,
+      "intercept": -16.7101,
+      "ci_lower": 0.003972,
+      "ci_upper": 0.012502,
+      "includes_zero": "False",
+      "mean_value": 0.358981,
+      "std_value": 0.089788
+    },
+    "trend_sic": {
+      "label": "SIC",
+      "slope": 0.002055,
+      "intercept": -3.8953,
+      "ci_lower": -0.001824,
+      "ci_upper": 0.005707,
+      "includes_zero": "True",
+      "mean_value": 0.231085,
+      "std_value": 0.06552
+    },
+    "trend_sbert": {
+      "label": "SBERT",
+      "slope": 0.001011,
+      "intercept": -1.811,
+      "ci_lower": -0.002833,
+      "ci_upper": 0.004552,
+      "includes_zero": "True",
+      "mean_value": 0.219345,
+      "std_value": 0.058562
+    },
+    "trend_population": {
+      "label": "Population_baseline",
+      "slope": 0.001128,
+      "intercept": -2.1103,
+      "ci_lower": -0.003499,
+      "ci_upper": 0.005545,
+      "includes_zero": "True",
+      "mean_value": 0.155418,
+      "std_value": 0.070496
+    },
+    "residual_trend_sic": {
+      "label": "Residual_delta_SAE_minus_SIC",
+      "slope": 0.006446,
+      "intercept": -12.8147,
+      "ci_lower": 0.00301,
+      "ci_upper": 0.010302,
+      "includes_zero": "False",
+      "mean_value": 0.127896,
+      "std_value": 0.083519
+    },
+    "residual_trend_sbert": {
+      "label": "Residual_delta_SAE_minus_SBERT",
+      "slope": 0.007489,
+      "intercept": -14.8991,
+      "ci_lower": 0.004375,
+      "ci_upper": 0.010887,
+      "includes_zero": "False",
+      "mean_value": 0.139636,
+      "std_value": 0.082617
+    },
+    "population_cancellation_confirmed": "True",
+    "universe_sae_cd": [
+      {
+        "year": 1996,
+        "n_clusters": 319,
+        "n_companies": 690
+      },
+      {
+        "year": 1997,
+        "n_clusters": 420,
+        "n_companies": 738
+      },
+      {
+        "year": 1998,
+        "n_clusters": 470,
+        "n_companies": 771
+      },
+      {
+        "year": 1999,
+        "n_clusters": 519,
+        "n_companies": 803
+      },
+      {
+        "year": 2000,
+        "n_clusters": 533,
+        "n_companies": 819
+      },
+      {
+        "year": 2001,
+        "n_clusters": 570,
+        "n_companies": 838
+      },
+      {
+        "year": 2002,
+        "n_clusters": 619,
+        "n_companies": 852
+      },
+      {
+        "year": 2003,
+        "n_clusters": 640,
+        "n_companies": 858
+      },
+      {
+        "year": 2004,
+        "n_clusters": 664,
+        "n_companies": 875
+      },
+      {
+        "year": 2005,
+        "n_clusters": 691,
+        "n_companies": 909
+      },
+      {
+        "year": 2006,
+        "n_clusters": 718,
+        "n_companies": 944
+      },
+      {
+        "year": 2007,
+        "n_clusters": 751,
+        "n_companies": 984
+      },
+      {
+        "year": 2008,
+        "n_clusters": 866,
+        "n_companies": 1172
+      },
+      {
+        "year": 2009,
+        "n_clusters": 896,
+        "n_companies": 1204
+      },
+      {
+        "year": 2010,
+        "n_clusters": 898,
+        "n_companies": 1216
+      },
+      {
+        "year": 2011,
+        "n_clusters": 904,
+        "n_companies": 1237
+      },
+      {
+        "year": 2012,
+        "n_clusters": 927,
+        "n_companies": 1249
+      },
+      {
+        "year": 2013,
+        "n_clusters": 906,
+        "n_companies": 1248
+      },
+      {
+        "year": 2014,
+        "n_clusters": 923,
+        "n_companies": 1240
+      },
+      {
+        "year": 2015,
+        "n_clusters": 937,
+        "n_companies": 1272
+      },
+      {
+        "year": 2016,
+        "n_clusters": 978,
+        "n_companies": 1307
+      },
+      {
+        "year": 2017,
+        "n_clusters": 975,
+        "n_companies": 1317
+      },
+      {
+        "year": 2018,
+        "n_clusters": 987,
+        "n_companies": 1349
+      },
+      {
+        "year": 2019,
+        "n_clusters": 1009,
+        "n_companies": 1390
+      },
+      {
+        "year": 2020,
+        "n_clusters": 963,
+        "n_companies": 1422
+      }
+    ],
+    "universe_trend_sae_cd": {
+      "label": "n_companies_sae_cd",
+      "slope": 31.404615,
+      "intercept": -61992.3077,
+      "ci_lower": 30.143147,
+      "ci_upper": 33.486829,
+      "includes_zero": "False",
+      "mean_value": 1068.16,
+      "std_value": 231.866976
+    },
+    "universe_sic": [
+      {
+        "year": 1993,
+        "n_clusters": 95,
+        "n_companies": 149
+      },
+      {
+        "year": 1994,
+        "n_clusters": 167,
+        "n_companies": 309
+      },
+      {
+        "year": 1995,
+        "n_clusters": 221,
+        "n_companies": 495
+      },
+      {
+        "year": 1996,
+        "n_clusters": 255,
+        "n_companies": 690
+      },
+      {
+        "year": 1997,
+        "n_clusters": 262,
+        "n_companies": 739
+      },
+      {
+        "year": 1998,
+        "n_clusters": 268,
+        "n_companies": 771
+      },
+      {
+        "year": 1999,
+        "n_clusters": 269,
+        "n_companies": 803
+      },
+      {
+        "year": 2000,
+        "n_clusters": 273,
+        "n_companies": 819
+      },
+      {
+        "year": 2001,
+        "n_clusters": 274,
+        "n_companies": 838
+      },
+      {
+        "year": 2002,
+        "n_clusters": 275,
+        "n_companies": 852
+      },
+      {
+        "year": 2003,
+        "n_clusters": 280,
+        "n_companies": 858
+      },
+      {
+        "year": 2004,
+        "n_clusters": 282,
+        "n_companies": 875
+      },
+      {
+        "year": 2005,
+        "n_clusters": 288,
+        "n_companies": 909
+      },
+      {
+        "year": 2006,
+        "n_clusters": 296,
+        "n_companies": 944
+      },
+      {
+        "year": 2007,
+        "n_clusters": 299,
+        "n_companies": 984
+      },
+      {
+        "year": 2008,
+        "n_clusters": 315,
+        "n_companies": 1175
+      },
+      {
+        "year": 2009,
+        "n_clusters": 316,
+        "n_companies": 1210
+      },
+      {
+        "year": 2010,
+        "n_clusters": 319,
+        "n_companies": 1221
+      },
+      {
+        "year": 2011,
+        "n_clusters": 319,
+        "n_companies": 1245
+      },
+      {
+        "year": 2012,
+        "n_clusters": 324,
+        "n_companies": 1262
+      },
+      {
+        "year": 2013,
+        "n_clusters": 320,
+        "n_companies": 1255
+      },
+      {
+        "year": 2014,
+        "n_clusters": 323,
+        "n_companies": 1245
+      },
+      {
+        "year": 2015,
+        "n_clusters": 321,
+        "n_companies": 1274
+      },
+      {
+        "year": 2016,
+        "n_clusters": 324,
+        "n_companies": 1309
+      },
+      {
+        "year": 2017,
+        "n_clusters": 323,
+        "n_companies": 1322
+      },
+      {
+        "year": 2018,
+        "n_clusters": 327,
+        "n_companies": 1353
+      },
+      {
+        "year": 2019,
+        "n_clusters": 328,
+        "n_companies": 1392
+      },
+      {
+        "year": 2020,
+        "n_clusters": 328,
+        "n_companies": 1424
+      }
+    ],
+    "universe_trend_sic": {
+      "label": "n_companies_sic",
+      "slope": 31.640769,
+      "intercept": -62463.9046,
+      "ci_lower": 30.320279,
+      "ci_upper": 33.865289,
+      "includes_zero": "False",
+      "mean_value": 1070.76,
+      "std_value": 233.943802
+    },
+    "universe_sbert": [
+      {
+        "year": 1996,
+        "n_clusters": 49,
+        "n_companies": 690
+      },
+      {
+        "year": 1997,
+        "n_clusters": 49,
+        "n_companies": 739
+      },
+      {
+        "year": 1998,
+        "n_clusters": 49,
+        "n_companies": 771
+      },
+      {
+        "year": 1999,
+        "n_clusters": 49,
+        "n_companies": 803
+      },
+      {
+        "year": 2000,
+        "n_clusters": 49,
+        "n_companies": 819
+      },
+      {
+        "year": 2001,
+        "n_clusters": 49,
+        "n_companies": 838
+      },
+      {
+        "year": 2002,
+        "n_clusters": 49,
+        "n_companies": 852
+      },
+      {
+        "year": 2003,
+        "n_clusters": 49,
+        "n_companies": 858
+      },
+      {
+        "year": 2004,
+        "n_clusters": 49,
+        "n_companies": 875
+      },
+      {
+        "year": 2005,
+        "n_clusters": 49,
+        "n_companies": 909
+      },
+      {
+        "year": 2006,
+        "n_clusters": 49,
+        "n_companies": 944
+      },
+      {
+        "year": 2007,
+        "n_clusters": 49,
+        "n_companies": 984
+      },
+      {
+        "year": 2008,
+        "n_clusters": 49,
+        "n_companies": 1175
+      },
+      {
+        "year": 2009,
+        "n_clusters": 49,
+        "n_companies": 1210
+      },
+      {
+        "year": 2010,
+        "n_clusters": 49,
+        "n_companies": 1221
+      },
+      {
+        "year": 2011,
+        "n_clusters": 49,
+        "n_companies": 1245
+      },
+      {
+        "year": 2012,
+        "n_clusters": 49,
+        "n_companies": 1262
+      },
+      {
+        "year": 2013,
+        "n_clusters": 49,
+        "n_companies": 1255
+      },
+      {
+        "year": 2014,
+        "n_clusters": 49,
+        "n_companies": 1245
+      },
+      {
+        "year": 2015,
+        "n_clusters": 49,
+        "n_companies": 1274
+      },
+      {
+        "year": 2016,
+        "n_clusters": 49,
+        "n_companies": 1309
+      },
+      {
+        "year": 2017,
+        "n_clusters": 49,
+        "n_companies": 1322
+      },
+      {
+        "year": 2018,
+        "n_clusters": 49,
+        "n_companies": 1353
+      },
+      {
+        "year": 2019,
+        "n_clusters": 49,
+        "n_companies": 1392
+      },
+      {
+        "year": 2020,
+        "n_clusters": 49,
+        "n_companies": 1424
+      }
+    ],
+    "universe_trend_sbert": {
+      "label": "n_companies_sbert",
+      "slope": 31.640769,
+      "intercept": -62463.9046,
+      "ci_lower": 30.320279,
+      "ci_upper": 33.865289,
+      "includes_zero": "False",
+      "mean_value": 1070.76,
+      "std_value": 233.943802
+    },
+    "early_late_sic": {
+      "early_mean_delta": 0.082845,
+      "late_mean_delta": 0.176701,
+      "ratio_late_to_early": 2.133,
+      "split_year": 2008
+    },
+    "early_late_sbert": {
+      "early_mean_delta": 0.087138,
+      "late_mean_delta": 0.196509,
+      "ratio_late_to_early": 2.255,
+      "split_year": 2008
+    }
+  },
+  "z0_investigation": {
+    "z0_sae": {
+      "z0": 0.63443,
+      "mc": 0.358981,
+      "bootstrap_mean": 0.344215,
+      "bootstrap_std": 0.023059,
+      "bias": 0.014766,
+      "bias_in_sds": 0.6404
+    },
+    "z0_sic": {
+      "z0": 0.111525,
+      "mc": 0.231085,
+      "bootstrap_mean": 0.230303,
+      "bootstrap_std": 0.007135,
+      "bias": 0.000782,
+      "bias_in_sds": 0.1096
+    },
+    "z0_sbert": {
+      "z0": 0.002256,
+      "mc": 0.219345,
+      "bootstrap_mean": 0.219349,
+      "bootstrap_std": 0.004479,
+      "bias": -4e-06,
+      "bias_in_sds": -0.0009
+    },
+    "sae_prop_below_observed": 0.7371,
+    "influence_top20_positive_count": 12,
+    "influence_top20_negative_count": 8,
+    "influence_top20_positive_sum": 0.059062,
+    "influence_top20_negative_sum": -0.054775,
+    "bca_adjusted_percentiles": {
+      "naive_lower": 2.5,
+      "naive_upper": 97.5,
+      "bca_lower": 24.1,
+      "bca_upper": 99.93
+    },
+    "z0_interpretation": "substantial_bias_bca_corrected"
+  },
+  "method_comovement": {
+    "year_correlations": {
+      "sae_sic": 0.4572,
+      "sae_sbert": 0.4437,
+      "sic_sbert": 0.9544
+    },
+    "cv_sae": 0.2501,
+    "cv_sic": 0.2835,
+    "cv_sbert": 0.267
+  }
+}

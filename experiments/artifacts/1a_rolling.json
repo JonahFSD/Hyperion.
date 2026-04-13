@@ -1,0 +1,214 @@
+{
+  "window_size_years": 5,
+  "window_size_rationale": "One business cycle (NBER average expansion+contraction)",
+  "n_windows": 21,
+  "windows": [
+    {
+      "start_year": 1996,
+      "end_year": 2000,
+      "sae_mc": 0.248293,
+      "sic_mc": 0.191959,
+      "sbert_mc": 0.198839,
+      "delta_sic": 0.056334,
+      "delta_sbert": 0.049454
+    },
+    {
+      "start_year": 1997,
+      "end_year": 2001,
+      "sae_mc": 0.286027,
+      "sic_mc": 0.197244,
+      "sbert_mc": 0.207499,
+      "delta_sic": 0.088784,
+      "delta_sbert": 0.078529
+    },
+    {
+      "start_year": 1998,
+      "end_year": 2002,
+      "sae_mc": 0.311354,
+      "sic_mc": 0.218131,
+      "sbert_mc": 0.222418,
+      "delta_sic": 0.093222,
+      "delta_sbert": 0.088936
+    },
+    {
+      "start_year": 1999,
+      "end_year": 2003,
+      "sae_mc": 0.314973,
+      "sic_mc": 0.206219,
+      "sbert_mc": 0.203038,
+      "delta_sic": 0.108754,
+      "delta_sbert": 0.111935
+    },
+    {
+      "start_year": 2000,
+      "end_year": 2004,
+      "sae_mc": 0.356398,
+      "sic_mc": 0.220364,
+      "sbert_mc": 0.216705,
+      "delta_sic": 0.136034,
+      "delta_sbert": 0.139693
+    },
+    {
+      "start_year": 2001,
+      "end_year": 2005,
+      "sae_mc": 0.370357,
+      "sic_mc": 0.243482,
+      "sbert_mc": 0.231918,
+      "delta_sic": 0.126875,
+      "delta_sbert": 0.138439
+    },
+    {
+      "start_year": 2002,
+      "end_year": 2006,
+      "sae_mc": 0.345148,
+      "sic_mc": 0.23462,
+      "sbert_mc": 0.22177,
+      "delta_sic": 0.110528,
+      "delta_sbert": 0.123378
+    },
+    {
+      "start_year": 2003,
+      "end_year": 2007,
+      "sae_mc": 0.334748,
+      "sic_mc": 0.213035,
+      "sbert_mc": 0.203809,
+      "delta_sic": 0.121713,
+      "delta_sbert": 0.130939
+    },
+    {
+      "start_year": 2004,
+      "end_year": 2008,
+      "sae_mc": 0.320931,
+      "sic_mc": 0.229474,
+      "sbert_mc": 0.223756,
+      "delta_sic": 0.091457,
+      "delta_sbert": 0.097175
+    },
+    {
+      "start_year": 2005,
+      "end_year": 2009,
+      "sae_mc": 0.328277,
+      "sic_mc": 0.242253,
+      "sbert_mc": 0.223261,
+      "delta_sic": 0.086024,
+      "delta_sbert": 0.105016
+    },
+    {
+      "start_year": 2006,
+      "end_year": 2010,
+      "sae_mc": 0.336175,
+      "sic_mc": 0.260432,
+      "sbert_mc": 0.237074,
+      "delta_sic": 0.075743,
+      "delta_sbert": 0.099101
+    },
+    {
+      "start_year": 2007,
+      "end_year": 2011,
+      "sae_mc": 0.365568,
+      "sic_mc": 0.282303,
+      "sbert_mc": 0.259527,
+      "delta_sic": 0.083265,
+      "delta_sbert": 0.106041
+    },
+    {
+      "start_year": 2008,
+      "end_year": 2012,
+      "sae_mc": 0.384067,
+      "sic_mc": 0.278035,
+      "sbert_mc": 0.257209,
+      "delta_sic": 0.106032,
+      "delta_sbert": 0.126858
+    },
+    {
+      "start_year": 2009,
+      "end_year": 2013,
+      "sae_mc": 0.417558,
+      "sic_mc": 0.242694,
+      "sbert_mc": 0.228705,
+      "delta_sic": 0.174864,
+      "delta_sbert": 0.188853
+    },
+    {
+      "start_year": 2010,
+      "end_year": 2014,
+      "sae_mc": 0.416774,
+      "sic_mc": 0.2287,
+      "sbert_mc": 0.217584,
+      "delta_sic": 0.188074,
+      "delta_sbert": 0.199189
+    },
+    {
+      "start_year": 2011,
+      "end_year": 2015,
+      "sae_mc": 0.420394,
+      "sic_mc": 0.204646,
+      "sbert_mc": 0.1957,
+      "delta_sic": 0.215749,
+      "delta_sbert": 0.224694
+    },
+    {
+      "start_year": 2012,
+      "end_year": 2016,
+      "sae_mc": 0.426894,
+      "sic_mc": 0.184305,
+      "sbert_mc": 0.176414,
+      "delta_sic": 0.242589,
+      "delta_sbert": 0.25048
+    },
+    {
+      "start_year": 2013,
+      "end_year": 2017,
+      "sae_mc": 0.41734,
+      "sic_mc": 0.185881,
+      "sbert_mc": 0.170132,
+      "delta_sic": 0.231459,
+      "delta_sbert": 0.247208
+    },
+    {
+      "start_year": 2014,
+      "end_year": 2018,
+      "sae_mc": 0.413803,
+      "sic_mc": 0.216493,
+      "sbert_mc": 0.190786,
+      "delta_sic": 0.19731,
+      "delta_sbert": 0.223017
+    },
+    {
+      "start_year": 2015,
+      "end_year": 2019,
+      "sae_mc": 0.396013,
+      "sic_mc": 0.21827,
+      "sbert_mc": 0.19452,
+      "delta_sic": 0.177743,
+      "delta_sbert": 0.201493
+    },
+    {
+      "start_year": 2016,
+      "end_year": 2020,
+      "sae_mc": 0.419687,
+      "sic_mc": 0.254909,
+      "sbert_mc": 0.233195,
+      "delta_sic": 0.164779,
+      "delta_sbert": 0.186493
+    }
+  ],
+  "sae_vs_sic": {
+    "n_positive": 21,
+    "n_total": 21,
+    "mean_delta": 0.137016,
+    "min_delta": 0.056334,
+    "min_delta_window": "1996-2000",
+    "max_delta": 0.242589,
+    "max_delta_window": "2012-2016"
+  },
+  "sae_vs_sbert": {
+    "n_positive": 21,
+    "n_total": 21,
+    "mean_delta": 0.148425,
+    "min_delta": 0.049454,
+    "min_delta_window": "1996-2000",
+    "max_delta": 0.25048,
+    "max_delta_window": "2012-2016"
+  }
+}
