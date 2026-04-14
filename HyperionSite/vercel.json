@@ -1,0 +1,3 @@
+{
+  "buildCommand": "chmod +x node_modules/.bin/* && tsc -b && vite build"
+}

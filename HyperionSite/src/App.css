@@ -1,0 +1,446 @@
+/* ══════════════════════════════════════
+   Background — atmospheric blobs + offset lines
+   ══════════════════════════════════════ */
+.bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Top-right: teal-blue bloom */
+.bg__blob--1 {
+  position: absolute;
+  top: -18%;
+  right: -12%;
+  width: 65vmax;
+  height: 65vmax;
+  background: radial-gradient(
+    ellipse at 50% 50%,
+    rgba(30, 100, 160, 0.18) 0%,
+    rgba(20, 70, 130, 0.10) 30%,
+    rgba(10, 40, 80, 0.04) 55%,
+    transparent 75%
+  );
+  filter: blur(80px);
+  animation: blobDrift1 20s ease-in-out infinite;
+}
+
+@keyframes blobDrift1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(-3%, 4%) scale(1.04); }
+}
+
+/* Bottom-left: deep indigo */
+.bg__blob--2 {
+  position: absolute;
+  bottom: -22%;
+  left: -15%;
+  width: 70vmax;
+  height: 60vmax;
+  background: radial-gradient(
+    ellipse at 40% 60%,
+    rgba(20, 40, 120, 0.16) 0%,
+    rgba(15, 25, 80, 0.09) 35%,
+    rgba(8, 12, 50, 0.03) 60%,
+    transparent 78%
+  );
+  filter: blur(100px);
+  animation: blobDrift2 26s ease-in-out infinite;
+}
+
+@keyframes blobDrift2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(4%, -3%) scale(1.03); }
+}
+
+/* Center-low: faint magenta accent */
+.bg__blob--3 {
+  position: absolute;
+  bottom: 5%;
+  left: 35%;
+  width: 45vmax;
+  height: 40vmax;
+  background: radial-gradient(
+    ellipse at 50% 50%,
+    rgba(100, 50, 130, 0.08) 0%,
+    rgba(80, 30, 100, 0.04) 40%,
+    transparent 70%
+  );
+  filter: blur(120px);
+  animation: blobDrift3 30s ease-in-out infinite;
+}
+
+@keyframes blobDrift3 {
+  0%, 100% { transform: translate(0, 0); }
+  50%      { transform: translate(-2%, -3%); }
+}
+
+/* ── Offset accent lines ── */
+.bg__line {
+  position: absolute;
+  background: rgba(126, 184, 218, 0.06);
+  transform-origin: center;
+}
+
+/* Long diagonal, upper-left to lower-right */
+.bg__line--1 {
+  width: 140%;
+  height: 1px;
+  top: 28%;
+  left: -20%;
+  transform: rotate(-18deg);
+}
+
+/* Shorter, steeper, right side */
+.bg__line--2 {
+  width: 80%;
+  height: 1px;
+  top: 62%;
+  right: -10%;
+  left: auto;
+  transform: rotate(25deg);
+  opacity: 0.7;
+}
+
+/* Very long, nearly horizontal, low */
+.bg__line--3 {
+  width: 160%;
+  height: 1px;
+  bottom: 18%;
+  left: -30%;
+  transform: rotate(-6deg);
+  opacity: 0.5;
+}
+
+/* Short accent, steep, upper right */
+.bg__line--4 {
+  width: 45%;
+  height: 1px;
+  top: 15%;
+  right: 5%;
+  left: auto;
+  transform: rotate(40deg);
+  opacity: 0.4;
+}
+
+/* ── Page layout ── */
+.page {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* ── Content wrapper (portal lives here, stays centered) ── */
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ══════════════════════════════════════
+   Title — HYPERION
+   ══════════════════════════════════════ */
+.title {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  font-family: 'Geist', sans-serif;
+  font-weight: 300;
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  letter-spacing: 0.35em;
+  color: #E8E6E3;
+  margin: 0;
+  opacity: 0;
+  animation: titleFadeIn 3s ease 0.8s forwards;
+  pointer-events: none;
+}
+
+@keyframes titleFadeIn {
+  from { opacity: 0; letter-spacing: 0.5em; }
+  to   { opacity: 1; letter-spacing: 0.35em; }
+}
+
+/* ══════════════════════════════════════
+   Portal / Black Hole — CSS keyframe driven
+   ══════════════════════════════════════ */
+.portal {
+  position: relative;
+  width: clamp(220px, 40vmin, 360px);
+  height: clamp(220px, 40vmin, 360px);
+  opacity: 0;
+  animation: portalFadeIn 4.5s ease 0.5s forwards;
+}
+
+@keyframes portalFadeIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.portal__layer {
+  position: absolute;
+  inset: 0;
+}
+
+/* ── Halo layers: x-stretched ellipses that rotate.
+     When all at 0°/180° they align horizontally → eye shape.
+     animation-direction: alternate makes the loop seamless. ── */
+
+.portal__glow {
+  inset: -40%;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse 70% 45% at 50% 50%,
+    rgba(126, 184, 218, 0.14) 0%,
+    rgba(80, 150, 210, 0.08) 30%,
+    rgba(40, 80, 140, 0.03) 55%,
+    transparent 72%
+  );
+  transform: scaleX(1.8);
+  animation: haloGlow 18s ease-in-out infinite alternate;
+}
+
+@keyframes haloGlow {
+  0%   { transform: rotate(0deg) scaleX(1.8); }
+  30%  { transform: rotate(105deg) scaleX(1.8); }
+  70%  { transform: rotate(250deg) scaleX(1.8); }
+  100% { transform: rotate(360deg) scaleX(1.8); }
+}
+
+.portal__wisps {
+  inset: -20% -50% -20% -50%;
+  border-radius: 40% 56% 44% 60% / 58% 42% 55% 40%;
+  background: conic-gradient(
+    from 60deg,
+    transparent 0deg,
+    rgba(140, 80, 160, 0.07) 20deg,
+    transparent 50deg,
+    rgba(180, 100, 140, 0.05) 140deg,
+    transparent 180deg,
+    rgba(120, 70, 150, 0.06) 260deg,
+    transparent 300deg
+  );
+  filter: blur(25px);
+  animation: haloWisps 22s ease-in-out infinite alternate;
+}
+
+@keyframes haloWisps {
+  0%   { transform: rotate(0deg); }
+  30%  { transform: rotate(-120deg); }
+  70%  { transform: rotate(-240deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+.portal__swirl-outer {
+  inset: -10% -40% -10% -40%;
+  border-radius: 42% 58% 44% 56% / 55% 42% 58% 45%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(60, 150, 210, 0.14) 30deg,
+    transparent 80deg,
+    rgba(100, 180, 230, 0.09) 150deg,
+    transparent 200deg,
+    rgba(50, 100, 160, 0.12) 270deg,
+    transparent 330deg
+  );
+  filter: blur(18px);
+  animation: haloOuter 14s ease-in-out infinite alternate;
+}
+
+@keyframes haloOuter {
+  0%   { transform: rotate(0deg); }
+  30%  { transform: rotate(130deg); }
+  70%  { transform: rotate(230deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.portal__swirl-mid {
+  inset: 5% -25% 5% -25%;
+  border-radius: 50% 40% 55% 45% / 40% 55% 42% 58%;
+  background: conic-gradient(
+    from 120deg,
+    transparent 0deg,
+    rgba(80, 170, 230, 0.20) 40deg,
+    transparent 90deg,
+    rgba(120, 200, 255, 0.12) 180deg,
+    transparent 240deg,
+    rgba(60, 130, 190, 0.16) 300deg,
+    transparent 350deg
+  );
+  filter: blur(12px);
+  animation: haloMid 16s ease-in-out infinite alternate;
+}
+
+@keyframes haloMid {
+  0%   { transform: rotate(0deg); }
+  30%  { transform: rotate(-140deg); }
+  70%  { transform: rotate(-220deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+.portal__swirl-inner {
+  inset: 15% -10% 15% -10%;
+  border-radius: 55% 38% 52% 43% / 38% 52% 40% 58%;
+  background: conic-gradient(
+    from 240deg,
+    transparent 0deg,
+    rgba(140, 210, 255, 0.28) 25deg,
+    transparent 70deg,
+    rgba(180, 230, 255, 0.16) 160deg,
+    transparent 210deg,
+    rgba(100, 190, 240, 0.22) 290deg,
+    transparent 340deg
+  );
+  filter: blur(8px);
+  animation: haloInner 12s ease-in-out infinite alternate;
+}
+
+@keyframes haloInner {
+  0%   { transform: rotate(0deg); }
+  30%  { transform: rotate(100deg); }
+  70%  { transform: rotate(260deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ── Eclipse: corona backlight ── */
+.portal__corona {
+  inset: 24% -5% 24% -5%;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse 65% 50% at 50% 50%,
+    rgba(200, 225, 255, 0.45) 0%,
+    rgba(126, 184, 218, 0.35) 30%,
+    rgba(80, 150, 210, 0.18) 55%,
+    rgba(40, 100, 170, 0.06) 75%,
+    transparent 100%
+  );
+  filter: blur(6px);
+  transform: scaleX(1.4);
+  animation: haloCorona 20s ease-in-out infinite alternate;
+}
+
+@keyframes haloCorona {
+  0%   { transform: rotate(0deg) scaleX(1.4); }
+  30%  { transform: rotate(-110deg) scaleX(1.4); }
+  70%  { transform: rotate(-250deg) scaleX(1.4); }
+  100% { transform: rotate(-360deg) scaleX(1.4); }
+}
+
+/* ── Eclipse: asymmetric flare ── */
+.portal__corona-flare {
+  inset: 18% -15% 18% -15%;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 200deg,
+    transparent 0deg,
+    rgba(200, 230, 255, 0.22) 30deg,
+    rgba(126, 184, 218, 0.35) 60deg,
+    rgba(200, 230, 255, 0.18) 100deg,
+    transparent 140deg,
+    transparent 220deg,
+    rgba(126, 184, 218, 0.08) 260deg,
+    transparent 300deg
+  );
+  filter: blur(10px);
+  animation: haloFlare 24s ease-in-out infinite alternate;
+}
+
+@keyframes haloFlare {
+  0%   { transform: rotate(0deg); }
+  30%  { transform: rotate(95deg); }
+  70%  { transform: rotate(265deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ── Eclipse: tight rim light ── */
+.portal__horizon {
+  inset: 30%;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow:
+    0 0 4px 1px rgba(200, 230, 255, 0.6),
+    0 0 12px 2px rgba(126, 184, 218, 0.4),
+    0 0 30px 4px rgba(126, 184, 218, 0.2),
+    0 0 60px 8px rgba(80, 150, 210, 0.08);
+}
+
+/* ── Contact ── */
+.contact {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  opacity: 1;
+}
+
+.contact a {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.8125rem, 1.4vw, 0.9375rem);
+  color: #E8E6E3;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #7EB8DA;
+}
+
+.contact a:focus-visible {
+  outline: 2px solid #7EB8DA;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.sep {
+  color: #2A2C34;
+  font-size: 0.5rem;
+  user-select: none;
+}
+
+/* ── Accessibility: respect motion preferences ── */
+@media (prefers-reduced-motion: reduce) {
+  .bg__blob--1,
+  .bg__blob--2,
+  .bg__blob--3 {
+    animation: none;
+  }
+
+  .portal__glow,
+  .portal__wisps,
+  .portal__swirl-outer,
+  .portal__swirl-mid,
+  .portal__swirl-inner,
+  .portal__corona,
+  .portal__corona-flare,
+  .portal__corona-flare {
+    animation: none;
+  }
+
+  .portal {
+    opacity: 1;
+    animation: none;
+  }
+
+  .title {
+    opacity: 1;
+    animation: none;
+    letter-spacing: 0.35em;
+  }
+}
